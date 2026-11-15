@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   sync:
@@ -62,6 +63,7 @@ jobs:
           echo "Nothing new to add (or dry run). Skipping PR creation."
 
       - name: Create pull request
+        id: pr
         if: steps.sync.outputs.total_new != '0' && inputs.dry_run != true
         uses: peter-evans/create-pull-request@v6
         with:
@@ -92,3 +94,36 @@ jobs:
             *Triggered by scheduled run on ${{ github.run_id }}*
           labels: "catalog-sync,automated"
           draft: false
+
+      - name: Notify via GitHub Issue (triggers email to @devankit01)
+        if: steps.sync.outputs.total_new != '0' && inputs.dry_run != true && steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          WEEK=$(date -u +"%Y-%m-%d")
+          PR_URL="${{ steps.pr.outputs.pull-request-url }}"
+          NEW_MODELS="${{ steps.sync.outputs.new_models }}"
+          NEW_DATASETS="${{ steps.sync.outputs.new_datasets }}"
+
+          gh issue create \
+            --repo "${{ github.repository }}" \
+            --title "📬 Weekly catalog sync — ${WEEK}: ${NEW_MODELS} new models, ${NEW_DATASETS} new datasets" \
+            --assignee "devankit01" \
+            --label "catalog-sync,automated" \
+            --body "## Weekly HuggingFace sync complete
+
+          **Date:** ${WEEK}
+          **New models added:** ${NEW_MODELS}
+          **New datasets added:** ${NEW_DATASETS}
+
+          ### Review the PR
+          ${PR_URL}
+
+          The PR contains auto-generated entries. Please:
+          - Skim \`usecase\` and \`strength\` fields — they may need a light edit
+          - Check any entries where \`license\` is \`unknown\`
+          - Remove obvious false positives (non-health models caught by tag search)
+          - Merge once CI passes
+
+          ---
+          *This issue was created automatically by the weekly-sync workflow. Close it after merging the PR.*"
