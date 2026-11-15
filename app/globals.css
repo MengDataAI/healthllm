@@ -418,10 +418,10 @@ footer { margin-top: 80px; border-top: 1px solid var(--line); padding: 28px 0 40
 }
 /* ── Mobile nav drawer ── */
 .nav-toggle { display: none; }
-.mobile-nav { display: none; flex-direction: column; background: var(--surface); border-top: 1px solid var(--line); padding: 12px 0 16px; }
-.mobile-nav.open { display: flex; }
-.mobile-nav a { padding: 11px 20px; font-size: 15px; font-weight: 500; color: var(--muted); text-decoration: none; border-radius: 0; }
-.mobile-nav a:hover, .mobile-nav a:focus { color: var(--ink); background: var(--accent-soft); }
+.mobile-drawer { display: flex; flex-direction: column; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 0 16px; }
+.mobile-drawer a { padding: 13px 20px; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mobile-drawer a:last-child { border-bottom: none; }
+.mobile-drawer a:active { background: var(--accent-soft); }
 
 @media (max-width: 760px) {
   .wrap { padding: 0 16px; }

@@ -44,8 +44,7 @@ export default function Header() {
             className="nav-toggle icon"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            aria-controls="mobile-nav"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen((v) => !v)}
           >
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path
@@ -58,21 +57,24 @@ export default function Header() {
           </button>
         </nav>
       </div>
-      <nav className={`mobile-nav${open ? " open" : ""}`} id="mobile-nav" aria-label="Mobile navigation">
-        {links.map((l) => (
-          <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
-            {l.label}
-          </Link>
-        ))}
-        <a
-          href="https://github.com/devankit01/healthllm"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => setOpen(false)}
-        >
-          GitHub ↗
-        </a>
-      </nav>
+
+      {open && (
+        <div className="mobile-drawer">
+          {links.map((l) => (
+            <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+          <a
+            href="https://github.com/devankit01/healthllm"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            GitHub ↗
+          </a>
+        </div>
+      )}
     </header>
   );
 }
