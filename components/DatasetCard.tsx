@@ -25,6 +25,9 @@ export default function DatasetCard({ dataset }: { dataset: HealthDataset }) {
       )}
 
       <div className="hf-card-tags">
+        {(dataset.language || []).map((l) => (
+          <span key={l} className="pill pill-lang">🌐 {l}</span>
+        ))}
         {dataset.tags.slice(0, 4).map((tag) => (
           <span key={tag} className="pill">{tag}</span>
         ))}

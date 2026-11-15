@@ -13,6 +13,7 @@ export interface HealthModel {
   usecase: string;
   strength: string;
   tags: string[];
+  language?: string[];
   featured: boolean;
   created_at?: string;
 }
@@ -30,6 +31,7 @@ export interface HealthDataset {
   description: string;
   usecase: string;
   tags: string[];
+  language?: string[];
   featured: boolean;
   created_at?: string;
 }

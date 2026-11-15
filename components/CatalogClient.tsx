@@ -15,6 +15,14 @@ export default function CatalogClient(props: Props) {
   const [licenseFilter, setLicenseFilter] = useState("all");
   const [sizeFilter, setSizeFilter] = useState("all");
   const [accessFilter, setAccessFilter] = useState("all");
+  const [languageFilter, setLanguageFilter] = useState("all");
+
+  // Build language list
+  const allLanguages = useMemo(() => {
+    const langs = new Set<string>();
+    props.items.forEach((item) => (item.language || []).forEach((l) => langs.add(l)));
+    return Array.from(langs).sort();
+  }, [props.items]);
 
   // Build tag list
   const allTags = useMemo(() => {
@@ -43,6 +51,7 @@ export default function CatalogClient(props: Props) {
     setLicenseFilter("all");
     setSizeFilter("all");
     setAccessFilter("all");
+    setLanguageFilter("all");
   };
 
   const filtered = useMemo(() => {
@@ -50,6 +59,7 @@ export default function CatalogClient(props: Props) {
     return props.items.filter((item) => {
       if (q && !JSON.stringify(item).toLowerCase().includes(q)) return false;
       if (activeTags.size > 0 && !item.tags?.some((t) => activeTags.has(t))) return false;
+      if (languageFilter !== "all" && !(item.language || []).includes(languageFilter)) return false;
 
       if (props.type === "models") {
         const m = item as HealthModel;
@@ -65,7 +75,7 @@ export default function CatalogClient(props: Props) {
 
       return true;
     });
-  }, [props.items, props.type, search, activeTags, medicalOnly, licenseFilter, sizeFilter, accessFilter]);
+  }, [props.items, props.type, search, activeTags, medicalOnly, licenseFilter, sizeFilter, accessFilter, languageFilter]);
 
   return (
     <div className="wrap catalog-layout">
@@ -132,6 +142,18 @@ export default function CatalogClient(props: Props) {
               <option value="all">All</option>
               <option value="open">Open</option>
               <option value="credentialed">Credentialed</option>
+            </select>
+          </div>
+        )}
+
+        {allLanguages.length > 0 && (
+          <div className="filter-group">
+            <p className="filter-group-label">Language</p>
+            <select value={languageFilter} onChange={(e) => setLanguageFilter(e.target.value)}>
+              <option value="all">All languages</option>
+              {allLanguages.map((l) => (
+                <option key={l} value={l}>{l}</option>
+              ))}
             </select>
           </div>
         )}

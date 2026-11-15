@@ -282,6 +282,7 @@ footer { margin-top: 80px; border-top: 1px solid var(--line); padding: 28px 0 40
 .hf-card-strength strong { color: var(--ink); }
 
 .hf-card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; margin-top: auto; padding-top: 12px; }
+.pill-lang { background: rgba(56,189,248,.12); color: var(--accent-mid); border-color: rgba(56,189,248,.25); }
 .pill { font: 500 11.5px/1 var(--mono); padding: 4px 8px; border-radius: 6px; background: color-mix(in srgb, var(--accent-soft) 70%, transparent); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent); }
 
 .hf-card-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border-top: 1px solid var(--line); padding-top: 12px; }

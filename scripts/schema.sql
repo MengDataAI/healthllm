@@ -72,6 +72,10 @@ create policy "Public read health_models" on public.health_models for select usi
 create policy "Public read health_datasets" on public.health_datasets for select using (true);
 create policy "Public read eval_results" on public.eval_results for select using (true);
 
+-- Language columns (run if adding to existing tables)
+alter table public.health_models add column if not exists language text[] default '{}';
+alter table public.health_datasets add column if not exists language text[] default '{}';
+
 -- Subscribers
 create table if not exists public.subscribers (
   id uuid default gen_random_uuid() primary key,

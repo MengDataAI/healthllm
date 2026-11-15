@@ -34,6 +34,9 @@ export default function ModelCard({ model }: { model: HealthModel }) {
       )}
 
       <div className="hf-card-tags">
+        {(model.language || []).map((l) => (
+          <span key={l} className="pill pill-lang">🌐 {l}</span>
+        ))}
         {model.tags.slice(0, 4).map((tag) => (
           <span key={tag} className="pill">{tag}</span>
         ))}

@@ -15,14 +15,18 @@
       "medical-qa"
     ],
     "usecase": "Top-performing open medical LLM. Outperforms GPT-4 on several medical benchmarks. Best choice when accuracy is critical.",
-    "strength": "USMLE, MedQA, PubMedQA — best-in-class open model across all three.",
+    "strength": "USMLE, MedQA, PubMedQA \u2014 best-in-class open model across all three.",
     "tags": [
       "medical-qa",
       "clinical-reasoning",
       "large-model",
       "llama-based"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "meditron-70b",
@@ -47,7 +51,11 @@
       "large-model",
       "llama-based"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "med42-70b",
@@ -72,7 +80,10 @@
       "safety",
       "large-model"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "medgemma-27b",
@@ -98,7 +109,11 @@
       "multimodal",
       "gemma-based"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "medgemma-4b",
@@ -124,7 +139,11 @@
       "efficient",
       "gemma-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "biomistral-7b",
@@ -142,14 +161,18 @@
       "medical-qa"
     ],
     "usecase": "Biomedical text understanding and generation. Pre-trained on PubMed Central full-text. Best open-source mid-size option.",
-    "strength": "Biomedical NER, relation extraction, literature QA — strong open-source choice.",
+    "strength": "Biomedical NER, relation extraction, literature QA \u2014 strong open-source choice.",
     "tags": [
       "biomedical",
       "medical-qa",
       "mistral-based",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "meditron-7b",
@@ -173,7 +196,11 @@
       "clinical-reasoning",
       "llama-based"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "openbiollm-8b",
@@ -191,14 +218,18 @@
       "medical-qa"
     ],
     "usecase": "High-performance medical LLM that runs on consumer hardware. Best balance of accuracy and resource use.",
-    "strength": "Medical QA, clinical reasoning — strong performance without requiring a 70B setup.",
+    "strength": "Medical QA, clinical reasoning \u2014 strong performance without requiring a 70B setup.",
     "tags": [
       "medical-qa",
       "clinical-reasoning",
       "llama-based",
       "efficient"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "asclepius-7b",
@@ -222,7 +253,11 @@
       "ehr",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "huatuogpt2-7b",
@@ -247,7 +282,11 @@
       "multilingual",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "chatdoctor-7b",
@@ -270,7 +309,10 @@
       "patient-communication",
       "instruction-tuned"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "medalpaca-13b",
@@ -294,7 +336,10 @@
       "instruction-tuned",
       "conversational"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pmc-llama-13b",
@@ -319,7 +364,11 @@
       "research",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "clinicalcamel-30b",
@@ -343,7 +392,10 @@
       "ehr",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "biogpt",
@@ -368,7 +420,10 @@
       "relation-extraction",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "biobert-large",
@@ -394,7 +449,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "clinical-bert",
@@ -421,7 +479,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pubmedbert",
@@ -447,7 +508,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "biolinkbert",
@@ -465,7 +529,7 @@
       "knowledge-graph"
     ],
     "usecase": "BioBERT variant that leverages document links for richer biomedical knowledge. State-of-the-art on many bio NLP benchmarks.",
-    "strength": "Biomedical QA, NER, semantic similarity — especially strong when citation/link context matters.",
+    "strength": "Biomedical QA, NER, semantic similarity \u2014 especially strong when citation/link context matters.",
     "tags": [
       "biomedical",
       "ner",
@@ -473,7 +537,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sapbert",
@@ -499,7 +566,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "gatortron",
@@ -523,7 +593,10 @@
       "ehr",
       "large-model"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bluebert",
@@ -549,7 +622,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "clinical-longformer",
@@ -575,7 +651,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "scibert",
@@ -601,7 +680,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llava-med",
@@ -625,7 +707,10 @@
       "radiology",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llama3.1-8b",
@@ -649,7 +734,11 @@
       "rag",
       "instruction-tuned"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mistral-7b",
@@ -674,7 +763,11 @@
       "open-source",
       "efficient"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "gemma2-9b",
@@ -698,7 +791,11 @@
       "medical-qa",
       "reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "qwen2.5-7b",
@@ -724,7 +821,12 @@
       "multilingual",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "phi3.5-mini",
@@ -750,7 +852,11 @@
       "medical-qa",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "zephyr-7b",
@@ -775,7 +881,10 @@
       "instruction-tuned",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "qwen2.5-72b",
@@ -801,7 +910,12 @@
       "reasoning",
       "multilingual"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "bio-medical-llama3-8b",
@@ -827,7 +941,11 @@
       "clinical-reasoning",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "medical-qwen3-swallow-8b",
@@ -852,7 +970,12 @@
       "multilingual",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mental-health-falcon-7b",
@@ -877,7 +1000,11 @@
       "counseling",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mental-health-llama2-13b",
@@ -902,7 +1029,11 @@
       "counseling",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "healix-3b",
@@ -920,14 +1051,17 @@
       "general-medicine"
     ],
     "usecase": "Lightweight health-focused model optimised for patient-facing applications and healthcare Q&A with low latency.",
-    "strength": "Fast health Q&A, patient education, symptom description — ideal for low-resource deployments.",
+    "strength": "Fast health Q&A, patient education, symptom description \u2014 ideal for low-resource deployments.",
     "tags": [
       "medical-qa",
       "patient-communication",
       "efficient",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "umlsbert",
@@ -953,7 +1087,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "chexbert",
@@ -979,7 +1116,10 @@
       "bert-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "medcpt-query",
@@ -997,7 +1137,7 @@
       "rag"
     ],
     "usecase": "Zero-shot biomedical retrieval model trained by NCBI. Encodes medical queries and articles for semantic search.",
-    "strength": "Medical RAG pipelines, PubMed article retrieval, biomedical semantic search — purpose-built for health retrieval.",
+    "strength": "Medical RAG pipelines, PubMed article retrieval, biomedical semantic search \u2014 purpose-built for health retrieval.",
     "tags": [
       "rag",
       "embeddings",
@@ -1005,7 +1145,10 @@
       "information-retrieval",
       "open-source"
     ],
-    "featured": true
+    "featured": true,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bioelectra-large",
@@ -1023,14 +1166,17 @@
       "ner"
     ],
     "usecase": "ELECTRA architecture pre-trained on PubMed. More sample-efficient than BioBERT for most biomedical NLP tasks.",
-    "strength": "Biomedical NER, text classification — trains faster and often outperforms BioBERT on small datasets.",
+    "strength": "Biomedical NER, text classification \u2014 trains faster and often outperforms BioBERT on small datasets.",
     "tags": [
       "biomedical",
       "ner",
       "text-classification",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "cxr-bert",
@@ -1056,7 +1202,10 @@
       "multimodal",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "clinical-t5-large",
@@ -1082,7 +1231,10 @@
       "text-generation",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llama3-aloe-8b",
@@ -1108,7 +1260,11 @@
       "safety",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mixtral-8x7b-medical",
@@ -1135,7 +1291,11 @@
       "mistral-based",
       "open-source"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-medicaledi-llm-reasoning-final-gguf",
@@ -1156,7 +1316,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-medical-llm-spidercore-14b-i1-gguf",
@@ -1177,7 +1340,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tokyotech-llm-medical-qwen3-swallow-30b-a3b",
@@ -1199,7 +1365,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-gccl-medical-llm-qwen3.5-4b-gguf",
@@ -1220,7 +1391,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "shaleen123-medicaledi-llm-reasoning-final",
@@ -1242,7 +1418,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "oscardeng-taylor-medical-llm-4bit",
@@ -1264,7 +1443,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "oscardeng-taylor-medical-llm-4bit-beta",
@@ -1286,7 +1468,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-gccl-medical-llm-qwen3-4b-gguf",
@@ -1307,7 +1492,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-medical-llm-spidercore-8b-i1-gguf",
@@ -1328,7 +1518,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-medical-llm-spidercore-14b-gguf",
@@ -1349,7 +1542,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tokyotech-llm-medical-gpt-oss-swallow-120b",
@@ -1371,7 +1567,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tokyotech-llm-medical-qwen3-swallow-32b",
@@ -1393,7 +1592,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-medical-llm-spidercore-8b-gguf",
@@ -1414,7 +1618,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "surajvbangera-llm-medicalbot",
@@ -1437,7 +1644,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "kavyaah-medical-coding-llm",
@@ -1458,7 +1669,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3.5-4b",
@@ -1480,7 +1694,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "yuvabe-ai-llama-medical-llm-16bit",
@@ -1502,7 +1721,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "alinadhir-sina-medical-reasoning-llm",
@@ -1523,7 +1746,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "yuvabe-ai-llama-medical-llm-8bit",
@@ -1545,7 +1771,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-gccl-medical-llm-8b-gguf",
@@ -1566,7 +1796,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft-i1-gguf",
@@ -1587,7 +1820,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "edwinkim-medical-llm-spidercore-14b",
@@ -1609,7 +1847,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft-gguf",
@@ -1630,7 +1871,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "monisha27-medical-llm-sft-demo",
@@ -1651,7 +1897,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3-4b-q4-k-m-gguf",
@@ -1673,7 +1922,12 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-instruct-exp8-instruction-dft",
@@ -1695,7 +1949,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-thinking-exp8-instruction-dft",
@@ -1717,7 +1976,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3.5-4b.q4-k-m-gguf",
@@ -1738,7 +2002,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "oussamael-medical-llm-10m-base",
@@ -1760,7 +2029,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-instruct-exp10-base-instruction-dft",
@@ -1782,7 +2054,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "bkholyday-qwen2.5-32b-instruct-medical-llm-elastic-search-250227",
@@ -1803,7 +2080,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "al-dn-medical-llm-mistral7b-q8-0-gguf",
@@ -1827,7 +2109,11 @@
       "medical-qa",
       "mistral-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "shaleen123-medicalllm",
@@ -1848,7 +2134,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "edwinkim-medical-llm-spidercore-8b",
@@ -1870,7 +2159,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "al-dn-medical-llm-mistral7b-f16-gguf",
@@ -1894,7 +2186,11 @@
       "medical-qa",
       "mistral-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "eswardivi-medical-qa-llm",
@@ -1915,7 +2211,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "faysal492-medical-llm",
@@ -1937,7 +2236,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3-4b",
@@ -1959,7 +2261,12 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "sagnik-p-medical-llm",
@@ -1982,7 +2289,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "vishnudhat-mus-medical-llm-lora",
@@ -2004,7 +2315,11 @@
       "medical-qa",
       "mistral-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "hungsvdut2k2-medical-sea-llm-full-finetune",
@@ -2027,7 +2342,11 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "bkholyday-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft",
@@ -2048,7 +2367,12 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "dkumarcvp-medical-llm-1gb",
@@ -2070,7 +2394,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "dod-llms-gptneo-1.3b-medical-multitranspt",
@@ -2091,7 +2418,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "khoa-llma2-vi-medical-news",
@@ -2113,7 +2443,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "monisha27-medical-llm-sft",
@@ -2135,7 +2468,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "dod-llms-gptneo-125m-medical-multitranspt",
@@ -2156,7 +2492,10 @@
     "tags": [
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "anjaligiriraj-medical-llm-tinyllama",
@@ -2178,7 +2517,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "amalltas-medical-llm-merged",
@@ -2201,7 +2544,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "shayan467-clinical-notes-llm",
@@ -2222,7 +2569,12 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual",
+      "Spanish"
+    ]
   },
   {
     "id": "leahjael-clinical-trials-llm",
@@ -2243,7 +2595,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-domain-specific-llm-clinical-data",
@@ -2264,7 +2619,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-1-fine-tuned-llm-clinical-data",
@@ -2285,7 +2643,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-2-fine-tuned-llm-clinical-data",
@@ -2306,7 +2667,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-sample-fine-tuned-llm-clinical-data",
@@ -2327,7 +2691,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-fbopt-fine-tuned-llm-clinical-data",
@@ -2348,7 +2715,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-opt-2-fine-tuned-llm-clinical-data",
@@ -2369,7 +2739,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manoranjan30-repeatedly-fine-tuned-llm-clinical-data",
@@ -2390,7 +2763,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sujeongim-clinical-llm-trained",
@@ -2411,7 +2787,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sujeongim-clinical-llm-trained-2025",
@@ -2432,7 +2811,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "msginside-clinical-llm-trained",
@@ -2453,7 +2835,10 @@
     "tags": [
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sathwikkuchana007-llm-chat-clinical-llama-3.1-8b",
@@ -2476,7 +2861,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "aakthepaak-clinical-llm-r32",
@@ -2499,7 +2888,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v1-gguf",
@@ -2520,7 +2913,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v0-i1-gguf",
@@ -2541,7 +2937,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v1-i1-gguf",
@@ -2562,7 +2961,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-dpo-gguf",
@@ -2584,7 +2986,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "richarderkhov-nahidhasan-health-llm-gguf",
@@ -2605,7 +3011,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "veenasree-mental-health-bert-llm",
@@ -2627,7 +3036,10 @@
       "bert-based",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "uruz7-mental-healthcare-llm",
@@ -2648,7 +3060,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-dpo-gguf",
@@ -2670,7 +3085,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v0-gguf",
@@ -2691,7 +3110,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ryanzzzzz-mental-health-llm-baseline-sft-llama-3.1-8b-lora-yt-0223",
@@ -2713,7 +3135,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v3-high-accuracy",
@@ -2735,7 +3161,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "ad-llm-technion-qwen-healthy-random-noise",
@@ -2756,7 +3186,12 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "davis426-healthcare-llm-assistant",
@@ -2780,7 +3215,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "anhduy0911-llm-ie-healthcare",
@@ -2802,7 +3241,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-merged-16bit",
@@ -2824,7 +3267,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v7",
@@ -2845,7 +3292,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v1",
@@ -2866,7 +3316,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "anindita-13-healthmate-llm",
@@ -2887,7 +3340,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "ryanzzzzz-mental-health-llm-baseline-sft-llama-3.1-8b-lora-qa-yt-0223",
@@ -2909,7 +3366,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "iamsan06-qlora-mental-health-llm",
@@ -2931,7 +3392,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "llm-healthcare-bert-v6-large",
@@ -2953,7 +3418,10 @@
       "bert-based",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v4",
@@ -2974,7 +3442,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v8",
@@ -2995,7 +3466,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v0",
@@ -3016,7 +3490,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm",
@@ -3037,7 +3514,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v3",
@@ -3058,7 +3538,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llmithull-healthgpt-lora",
@@ -3082,7 +3565,11 @@
       "llama-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "maruisaa-eeg-healthllm",
@@ -3103,7 +3590,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "lokesh477-healthcare-llm",
@@ -3125,7 +3615,11 @@
       "general",
       "mistral-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "nahidhasan-health-llm",
@@ -3147,7 +3641,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-merged-4bit",
@@ -3169,7 +3667,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v5",
@@ -3190,7 +3692,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v9",
@@ -3211,7 +3716,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llmaaz-llama-mental-health-merged",
@@ -3232,7 +3740,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "ad-llm-technion-llama-healthy-random-noise",
@@ -3253,7 +3765,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "ad-llm-technion-gemma-healthy-random-noise",
@@ -3274,7 +3790,11 @@
     "tags": [
       "gemma-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-merged-4bit",
@@ -3296,7 +3816,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-merged-16bit",
@@ -3318,7 +3842,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v6",
@@ -3339,7 +3867,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "llmaaz-llama-mental-health",
@@ -3360,7 +3891,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "kingducks-llm-health",
@@ -3381,7 +3916,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bluelotus99-healthllm",
@@ -3402,7 +3940,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "truongxl-llm-healthcare",
@@ -3424,7 +3965,11 @@
       "gemma-based",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v1",
@@ -3445,7 +3990,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v2",
@@ -3466,7 +4015,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "emama-nahid-health-llm",
@@ -3487,7 +4040,11 @@
     "tags": [
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct",
@@ -3509,7 +4066,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct",
@@ -3531,7 +4092,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v2",
@@ -3552,7 +4117,10 @@
     "tags": [
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-dpo",
@@ -3574,7 +4142,11 @@
       "general",
       "llama-based"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "iiosnail-bert-base-chinese-medical-ner",
@@ -3597,7 +4169,11 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English"
+    ]
   },
   {
     "id": "silpakanneganti-bert-medical-ner",
@@ -3620,7 +4196,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "callmedaniel-tw-medical-bert",
@@ -3643,7 +4222,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "setosm-bert-finetuned-for-medical-ner",
@@ -3666,7 +4248,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "aventiq-ai-bert-medical-entity-extraction",
@@ -3688,7 +4273,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "yousef1258852-arabic-medical-qa-bert",
@@ -3711,7 +4299,11 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Arabic",
+      "English"
+    ]
   },
   {
     "id": "ilyali034-bert-medical-diagnosis-en",
@@ -3735,7 +4327,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "fspanda-medical-bio-bert2",
@@ -3757,7 +4352,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "vindoe-bert-finetuned-for-medical-ner",
@@ -3780,7 +4378,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "helboukkouri-character-bert-medical",
@@ -3802,7 +4403,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "medical-ner-proj-bert-medical-ner-proj",
@@ -3825,7 +4429,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "snumin44-medical-biencoder-ko-bert-context",
@@ -3847,7 +4454,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sejalsaka-medical-bert-finetuned-ner",
@@ -3870,7 +4480,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "apps1-medical-bert-tiny-asymmetric-old-dataset-v2",
@@ -3893,7 +4506,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "snumin44-medical-biencoder-ko-bert-question",
@@ -3915,7 +4531,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "fmmolina-bert-base-spanish-wwm-uncased-finetuned-ner-medical",
@@ -3938,7 +4557,11 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Spanish"
+    ]
   },
   {
     "id": "ai-ml-research-medical-bert-tiny-asymmetric-old-dataset-v3",
@@ -3961,7 +4584,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pavanmantha-bert-medical-student",
@@ -3984,7 +4610,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "incidelen-bert-base-turkish-cased-medical-qa",
@@ -4006,7 +4635,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "justadvancetechonology-bert-fine-tuned-medical-insurance-ner",
@@ -4029,7 +4661,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "incidelen-bert-base-turkish-128k-cased-medical-qa",
@@ -4051,7 +4686,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pavanmantha-bert-medical-teacher",
@@ -4074,7 +4712,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "cihatyldz-sifahane-bert-turkish-medical",
@@ -4098,7 +4739,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "raj-p-bert-finetuned-ner-medical",
@@ -4121,7 +4765,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "alexvladu1-bert-romanian-medical-issue",
@@ -4143,7 +4790,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "apps1-medical-bert-tiny-asymmetric-old-dataset-v1",
@@ -4166,7 +4816,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ficofilbert-finetuned-medical-bert",
@@ -4188,7 +4841,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "jingtao-dam-bert-base-mlm-dureader-cpr-medical",
@@ -4210,7 +4866,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pineiden-nominal-groups-recognition-medical-disease-competencia2-bert-medical-ner",
@@ -4233,7 +4892,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "gleb-shnshn-arabic-medical-bert-qa-82",
@@ -4256,7 +4918,11 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Arabic",
+      "English"
+    ]
   },
   {
     "id": "ajs50-bert-finetuned-medicalchunksecond",
@@ -4279,7 +4945,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "roupenminassian-medicalbert",
@@ -4303,7 +4972,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "achdev-medicalbert",
@@ -4326,7 +4998,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "caesarcitrea-crocus-bert-medical-department-classification",
@@ -4349,7 +5024,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "albigara-bert-finetuned-ner-medical-copy",
@@ -4372,7 +5050,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ivanperkhun-did-the-doctor-say-anything-about-the-medical-report-in-general-bert-last512",
@@ -4395,7 +5076,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ubersmoothie-bert-finetuned-ner-medical",
@@ -4418,7 +5102,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "agevasbatgry-bert-finetuned-ner-medical",
@@ -4441,7 +5128,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "wwlysses-bert-finetuned-ner-medical",
@@ -4464,7 +5154,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "lakshmishreea122003-bert-medical-ner",
@@ -4487,7 +5180,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "diginoron-bert-medical-fa",
@@ -4509,7 +5205,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "atharshk-bert-medical",
@@ -4532,7 +5231,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "toolevalxm-medicalbert-clinicalrelease",
@@ -4555,7 +5257,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "supershaowei-bert-intent-medical-classification",
@@ -4578,7 +5283,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "majiaqi1213-bert-base-chinese-medical-ner",
@@ -4600,7 +5308,11 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "Chinese",
+      "English"
+    ]
   },
   {
     "id": "ajs50-bert-finetuned-medicalchunk",
@@ -4623,7 +5335,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "etadevosyan-did-the-doctor-say-that-the-medical-report-would-be-in-a-specific-time-bert-last128",
@@ -4646,7 +5361,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ivanperkhun-did-the-doctor-say-that-the-medical-report-would-be-in-a-specific-time-bert-last128",
@@ -4669,7 +5387,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ivanperkhun-did-the-doctor-discuss-with-the-patient-where-the-medical-report-would-be-bert-last512",
@@ -4692,7 +5413,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "moosejuice13-bert-medical-diagnosis-classifier",
@@ -4714,7 +5438,10 @@
       "bert-based",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "medicalai-clinicalbert",
@@ -4737,7 +5464,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "samrawal-bert-base-uncased-clinical-ner",
@@ -4760,7 +5490,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bvanaken-clinical-assertion-negation-bert",
@@ -4784,7 +5517,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nlpie-tiny-clinicalbert",
@@ -4806,7 +5542,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "valiancehealth-bio-clinical-bert-onnx",
@@ -4828,7 +5567,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nlpie-distil-clinicalbert",
@@ -4850,7 +5592,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "xenova-bio-clinicalbert",
@@ -4872,7 +5617,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tsubasaz-clinical-pubmed-bert-base-512",
@@ -4895,7 +5643,10 @@
       "biomedical",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "okho0653-bio-clinicalbert-zero-shot-tokenizer-truncation-sentiment-model",
@@ -4918,7 +5669,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sasrplays-finetuned-clinicalbert-disease-classifier",
@@ -4940,7 +5694,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pabromero-clinicalbert-full-finetuned-ner-pablo",
@@ -4964,7 +5721,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "jon-t-tiny-clinicalbert-qa",
@@ -4987,7 +5747,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "arashpcc-bio-clinicalbert",
@@ -5009,7 +5772,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "embanemb-bio-clinicalbert-metric-for-best-model-loss-finetuned-metric-for-best-model-loss-finetuned",
@@ -5032,7 +5798,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "raavig-clinical-bert-multi-label-sentence-classification-with-non-spot",
@@ -5054,7 +5823,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "oumaimabrh023-clinicalbert-model",
@@ -5076,7 +5848,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "yagmurtuncer-bert-base-turkish-clinical-ner",
@@ -5099,7 +5874,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "emran-clinicalbert-description-full-icd10-code",
@@ -5121,7 +5899,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tsubasaz-clinical-pubmed-bert-base-128",
@@ -5144,7 +5925,10 @@
       "biomedical",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "judithrosell-bc5cdr-clinicalbert-ner",
@@ -5168,7 +5952,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "fawern-clinicalbert-medical-text-classification",
@@ -5192,7 +5979,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "lediona-bio-clinicalbert-finetuned-ner",
@@ -5215,7 +6005,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ajtamayoh-nlp-cic-wfu-clinical-cases-ner-sents-tokenized-bertin-roberta-base-spanish-fine-tuned",
@@ -5238,7 +6031,11 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Spanish"
+    ]
   },
   {
     "id": "menadsa-s-bio-clinicalbert",
@@ -5260,7 +6057,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "akhil001-bio-clinical-bert",
@@ -5282,7 +6082,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv2",
@@ -5305,7 +6108,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "sid321axn-bio-clinicalbert-finetuned-medicalcondition",
@@ -5329,7 +6135,10 @@
       "general",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv2.5",
@@ -5352,7 +6161,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "cnt-upenn-bio-clinicalbert-for-seizurefreedom-classification",
@@ -5375,7 +6187,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "josephnguyen-clinicalbert",
@@ -5398,7 +6213,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "josephnguyen-new-clinicalbert",
@@ -5420,7 +6238,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv2.4",
@@ -5443,7 +6264,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "jon-t-bio-clinicalbert-qa",
@@ -5466,7 +6290,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "alexd063-bio-clinicalbert-finetuned-medmentions-v1",
@@ -5489,7 +6316,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "xenova-clinicalbert",
@@ -5512,7 +6342,10 @@
       "clinical-reasoning",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv2.6",
@@ -5535,7 +6368,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv2.7",
@@ -5558,7 +6394,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "mutazyoune-clinicalbert-finetuned-ner",
@@ -5581,7 +6420,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv3",
@@ -5604,7 +6446,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "cja5553-bio-clinicalbert-mimic-iv-icu-stay-more-than-1-day-prediction-ia3-ti",
@@ -5626,7 +6471,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nazyrova-clinicalbert",
@@ -5648,7 +6496,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv5ray",
@@ -5671,7 +6522,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "monstergems-bio-clinicalbert",
@@ -5694,7 +6548,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "alexd063-bio-clinicalbert-finetuned-medqa",
@@ -5716,7 +6573,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "gritli-clinical-bert-right",
@@ -5739,7 +6599,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "nishhaaann-clinicalbertftv1",
@@ -5762,7 +6625,10 @@
       "clinical-reasoning",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "tsubasaz-clinical-bert-base-128",
@@ -5784,7 +6650,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "commanderstrife-ade-bio-clinicalbert-ner",
@@ -5807,7 +6676,10 @@
       "clinical-reasoning",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "manueltonneau-clinicalcovid-bert-nli",
@@ -5829,7 +6701,10 @@
       "bert-based",
       "clinical-reasoning"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "neuml-pubmedbert-base-embeddings",
@@ -5851,7 +6726,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "timkond-s-pubmedbert-medquad",
@@ -5873,7 +6751,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-335m",
@@ -5898,7 +6779,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-genomicdetect-pubmed-109m",
@@ -5923,7 +6807,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-genomicdetect-pubmed-335m",
@@ -5948,7 +6835,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "microsoft-biomedclip-pubmedbert-256-vit-base-patch16-224",
@@ -5972,7 +6862,10 @@
       "medical-qa",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-v2-109m",
@@ -5996,7 +6889,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-109m",
@@ -6021,7 +6917,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-oncologydetect-pubmed-335m",
@@ -6045,7 +6944,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pritamdeka-s-pubmedbert-ms-marco",
@@ -6067,7 +6969,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-109m",
@@ -6091,7 +6996,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-v2-109m",
@@ -6115,7 +7023,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-335m",
@@ -6139,7 +7050,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-335m",
@@ -6163,7 +7077,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-335m",
@@ -6187,7 +7104,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-109m",
@@ -6212,7 +7132,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-speciesdetect-pubmed-109m",
@@ -6236,7 +7159,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-335m",
@@ -6261,7 +7187,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-oncologydetect-pubmed-v2-109m",
@@ -6285,7 +7214,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-109m",
@@ -6310,7 +7242,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-335m",
@@ -6335,7 +7270,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-v2-109m",
@@ -6360,7 +7298,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-109m",
@@ -6384,7 +7325,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-pharmadetect-pubmed-335m",
@@ -6409,7 +7353,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-109m",
@@ -6433,7 +7380,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-v2-109m",
@@ -6457,7 +7407,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-335m",
@@ -6481,7 +7434,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-335m",
@@ -6505,7 +7461,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-109m",
@@ -6529,7 +7488,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-pharmadetect-pubmed-109m",
@@ -6554,7 +7516,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-335m",
@@ -6579,7 +7544,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-109m",
@@ -6603,7 +7571,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-v2-109m",
@@ -6627,7 +7598,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-v2-109m",
@@ -6652,7 +7626,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-speciesdetect-pubmed-v2-109m",
@@ -6676,7 +7653,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-v2-109m",
@@ -6700,7 +7680,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-v2-109m",
@@ -6725,7 +7708,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-109m",
@@ -6750,7 +7736,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-v2-109m",
@@ -6775,7 +7764,10 @@
       "medical-qa",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "flaviagiammarino-pubmed-clip-vit-base-patch32",
@@ -6798,7 +7790,10 @@
       "medical-qa",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "pritamdeka-pubmedbert-mnli-mednli",
@@ -6821,7 +7816,10 @@
       "biomedical",
       "general"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "cambridgeltl-sapbert-from-pubmedbert-fulltext-mean-token",
@@ -6843,7 +7841,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "ghadeermobasher-bc5cdr-chemical-disease-balanced-biomednlp-pubmedbert-base-uncased-abstract-fulltext",
@@ -6866,7 +7867,10 @@
       "biomedical",
       "ner"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bcwarner-pubmedbert-base-uncased-sts-combined",
@@ -6889,7 +7893,10 @@
       "biomedical",
       "medical-qa"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bionlp-bluebert-pubmed-uncased-l-12-h-768-a-12",
@@ -6911,7 +7918,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "google-bigbird-pegasus-large-pubmed",
@@ -6934,7 +7944,10 @@
       "general",
       "summarization"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "microsoft-biomednlp-krissbert-pubmed-umls-el",
@@ -6956,7 +7969,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "neuml-pubmedbert-base-embeddings-matryoshka",
@@ -6978,7 +7994,10 @@
       "bert-based",
       "biomedical"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-imagingcancer-0.8",
@@ -7000,7 +8019,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "toolevalxm-radiologyai-chestxray",
@@ -7022,7 +8044,10 @@
       "medical-qa",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -7045,7 +8070,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-imagingcancer-0.9",
@@ -7068,7 +8096,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-imagingcancer-0.9",
@@ -7090,7 +8121,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-0.8",
@@ -7113,7 +8147,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-0.8",
@@ -7135,7 +8172,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-0.9",
@@ -7158,7 +8198,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-imagingcancer-0.9",
@@ -7180,7 +8223,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-imagingcancer-0.8",
@@ -7203,7 +8249,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -7225,7 +8274,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -7247,7 +8299,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "aishwaryas61622-radiology-flan-t5-summary",
@@ -7268,7 +8323,10 @@
     "tags": [
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-0.9",
@@ -7290,7 +8348,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-0.9",
@@ -7312,7 +8373,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-0.8",
@@ -7334,7 +8398,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-imagingcancer-0.8",
@@ -7356,7 +8423,10 @@
       "general",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-2",
@@ -7379,7 +8449,11 @@
       "llama-based",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-3",
@@ -7402,7 +8476,11 @@
       "llama-based",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "toolevalxm-radiologyai-testrepo",
@@ -7423,7 +8501,10 @@
     "tags": [
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-4",
@@ -7446,7 +8527,11 @@
       "llama-based",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-instruct-radiology-5",
@@ -7469,7 +8554,11 @@
       "llama-based",
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English",
+      "Multilingual"
+    ]
   },
   {
     "id": "ujwal-jibhkate-auditable-radiology-ai-model",
@@ -7490,7 +8579,10 @@
     "tags": [
       "radiology"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   },
   {
     "id": "bhumika-tewari-282006-ayurvedic-drug-discovery-affinity-model",
@@ -7511,6 +8603,9 @@
     "tags": [
       "drug-safety"
     ],
-    "featured": false
+    "featured": false,
+    "language": [
+      "English"
+    ]
   }
 ]
