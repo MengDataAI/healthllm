@@ -23,8 +23,8 @@
     <a class="brand" href="#top"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health &amp; RAG Evals</small></a>
     <nav aria-label="Main">
       <a href="#why">Why</a>
-      <a href="#models">Models</a>
-      <a href="#datasets">Datasets</a>
+      <a href="models.html">Models</a>
+      <a href="datasets.html">Datasets</a>
       <a href="#board">Leaderboard</a>
       <a href="#add">Add a model</a>
       <a class="gh" href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">GitHub</a>
@@ -112,34 +112,26 @@
     </ol>
   </section>
 
-  <!-- ── Models catalog ── -->
-  <section class="wrap catalog-section" id="models" aria-labelledby="models-h">
-    <p class="sec-label">Browse</p>
-    <div class="sec-head">
-      <h2 id="models-h">Health LLMs</h2>
-      <span class="catalog-count" id="models-count"></span>
+  <!-- ── Hub teasers ── -->
+  <section class="wrap hub-teasers" aria-label="Browse models and datasets">
+    <div class="teaser-grid">
+      <a class="teaser-card" href="models.html">
+        <div class="teaser-icon">🧠</div>
+        <div>
+          <h3>Health LLMs</h3>
+          <p>33 open-source models — from Meditron and OpenBioLLM to ClinicalBERT and MedGemma. Each with use case, links, and license.</p>
+          <span class="teaser-link">Browse all models →</span>
+        </div>
+      </a>
+      <a class="teaser-card" href="datasets.html">
+        <div class="teaser-icon">📊</div>
+        <div>
+          <h3>Health Datasets</h3>
+          <p>29 datasets for training and evaluation — Medical QA, NER, Radiology, Clinical Records, Drug Safety, Genomics and more.</p>
+          <span class="teaser-link">Browse all datasets →</span>
+        </div>
+      </a>
     </div>
-    <p class="intro">Open-source language models for healthcare — from specialized clinical models to general models with strong health performance. Each entry shows the best use case so you can pick the right model for your task.</p>
-    <div class="catalog-toolbar">
-      <div class="search-wrap"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input id="models-q" type="search" placeholder="Search models…" aria-label="Search models"></div>
-      <div class="filter-tags" id="models-tags" role="group" aria-label="Filter by task"></div>
-    </div>
-    <div class="hf-grid" id="models-grid"></div>
-  </section>
-
-  <!-- ── Datasets catalog ── -->
-  <section class="wrap catalog-section" id="datasets" aria-labelledby="datasets-h">
-    <p class="sec-label">Browse</p>
-    <div class="sec-head">
-      <h2 id="datasets-h">Health Datasets</h2>
-      <span class="catalog-count" id="datasets-count"></span>
-    </div>
-    <p class="intro">Openly licensed datasets for training, fine-tuning, and evaluating health AI — spanning clinical records, medical QA, NER, radiology, drug safety, and more.</p>
-    <div class="catalog-toolbar">
-      <div class="search-wrap"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input id="datasets-q" type="search" placeholder="Search datasets…" aria-label="Search datasets"></div>
-      <div class="filter-tags" id="datasets-tags" role="group" aria-label="Filter by type"></div>
-    </div>
-    <div class="hf-grid" id="datasets-grid"></div>
   </section>
 
   <section class="wrap" id="board" aria-labelledby="board-h">

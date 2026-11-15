@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-page="datasets">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health Datasets · HealthLLM</title>
+<meta name="description" content="Browse openly licensed datasets for training, fine-tuning, and evaluating health AI — spanning clinical records, medical QA, NER, radiology, and more.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#catalog-grid">Skip to datasets</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health &amp; RAG Evals</small></a>
+    <nav aria-label="Main">
+      <a href="index.html#why">Why</a>
+      <a href="models.html">Models</a>
+      <a href="datasets.html" class="nav-active">Datasets</a>
+      <a href="index.html#board">Leaderboard</a>
+      <a href="index.html#add">Add a model</a>
+      <a class="gh" href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">GitHub</a>
+      <button id="theme" class="icon" type="button" aria-label="Switch colour theme"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow-sm">Browse · 29 datasets</p>
+    <h1 class="page-title">Health Datasets</h1>
+    <p class="page-subtitle">Openly licensed datasets for training, fine-tuning, and evaluating health AI. Spanning clinical records, medical QA, NER, radiology, drug safety, genomics, and more. Filter by type or access level.</p>
+  </div>
+</div>
+
+<div class="wrap catalog-layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="catalog-sidebar" aria-label="Filters">
+    <div class="sidebar-header">
+      <span class="sidebar-title">Filters</span>
+      <button id="clear-btn" class="clear-link">Clear all</button>
+    </div>
+
+    <div class="sidebar-search">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input id="search-input" type="search" placeholder="Search datasets…" aria-label="Search datasets">
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-group-label">Access</p>
+      <select id="access-filter" aria-label="Access level">
+        <option value="all">All</option>
+        <option value="open">Open (no account needed)</option>
+        <option value="credentialed">Credentialed (PhysioNet)</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-group-label">Dataset type</p>
+      <div id="tag-filters" class="tag-filter-list"></div>
+    </div>
+
+    <!-- Unused model-only filters — kept as hidden so catalog.js doesn't error -->
+    <input id="med-only" type="checkbox" hidden>
+    <select id="lic-type" hidden><option value="all">All</option></select>
+    <select id="params-size" hidden><option value="all">All</option></select>
+  </aside>
+
+  <!-- ── Main content ── -->
+  <main>
+    <div class="catalog-toolbar-row">
+      <span id="result-count" class="result-count"></span>
+    </div>
+    <div id="catalog-grid" class="hf-grid"></div>
+  </main>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <p><strong>Not medical advice, and not clinical validation.</strong> Always review dataset licences before use. Credentialed datasets require PhysioNet registration.</p>
+    <p>MIT licensed · <a href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">Source on GitHub</a> · <a href="index.html">HealthLLM Home</a></p>
+  </div>
+</footer>
+
+<script src="catalog.js"></script>
+</body>
+</html>

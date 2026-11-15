@@ -424,7 +424,7 @@
 
   fetch("data.json")
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(function (json) { data = json; bind(); renderStatic(); renderDomain(); renderTable(); initCatalogs(); })
+    .then(function (json) { data = json; bind(); renderStatic(); renderDomain(); renderTable(); })
     .catch(function (err) {
       $("notice").innerHTML = '<div class="notice"><p><strong>Could not load the data.</strong> Run <code>npm start</code> from the repo root so the site is served with data.json. (' +
         esc(err.message) + ")</p></div>";
