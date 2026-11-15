@@ -123,4 +123,20 @@ for (const page of ["models.html", "datasets.html"]) {
     writeFileSync(p, readFileSync(p, "utf8").replace('<script src="catalog.js"></script>', `${catalogScript}\n<script src="catalog.js"></script>`));
   }
 }
+
+// Inject real model/dataset counts into index.html stats strip
+const indexPath = join(out, "index.html");
+if (existsSync(indexPath)) {
+  let html = readFileSync(indexPath, "utf8");
+  html = html.replace(
+    /(<dt>)\d+(<\/dt>\s*<dd>Health LLMs<\/dd>)/,
+    `$1${healthModels.length}$2`
+  );
+  html = html.replace(
+    /(<dt>)\d+(<\/dt>\s*<dd>Datasets<\/dd>)/,
+    `$1${healthDatasets.length}$2`
+  );
+  writeFileSync(indexPath, html);
+  console.log(`Stats updated: ${healthModels.length} models, ${healthDatasets.length} datasets`);
+}
 console.log("Wrote build/");
