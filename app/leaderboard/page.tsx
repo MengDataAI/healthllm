@@ -17,6 +17,28 @@ const EVALS = [
   { key: "consistency", label: "Consistency" },
 ];
 
+const KNOWN_PARAMS: Record<string, string> = {
+  "mistral:latest": "7.2B",
+  "mistral": "7.2B",
+  "qwen2.5:7b": "7.6B",
+  "deepseek-r1:7b": "7.6B",
+  "llama3.1:8b": "8B",
+  "llama3:8b": "8B",
+  "phi3.5": "3.8B",
+  "phi3": "3.8B",
+  "gemma2:9b": "9B",
+  "meditron:7b": "7B",
+};
+
+function inferParams(modelName: string): string {
+  const lower = modelName.toLowerCase();
+  for (const [k, v] of Object.entries(KNOWN_PARAMS)) {
+    if (lower.includes(k)) return v;
+  }
+  const m = lower.match(/(\d+\.?\d*)\s*b/);
+  return m ? `${m[1]}B` : "—";
+}
+
 function grade(score: number) {
   if (score >= 80) return "A";
   if (score >= 65) return "B";
@@ -55,6 +77,7 @@ export default async function LeaderboardPage() {
               <tr>
                 <th>#</th>
                 <th style={{ textAlign: "left" }}>Model</th>
+                <th>Params</th>
                 {EVALS.map((e) => <th key={e.key}>{e.label}</th>)}
                 <th>Health Score</th>
                 <th>Grade</th>
@@ -66,6 +89,9 @@ export default async function LeaderboardPage() {
                   <td className="rank">{i + 1}</td>
                   <td className="model">
                     <b>{r.model_name}</b>
+                    </td>
+                  <td style={{ textAlign: "center" }}>
+                    <span className="badge badge-type">{inferParams(r.model_name)}</span>
                     <span>{r.hardware}</span>
                   </td>
                   {EVALS.map((e) => {
