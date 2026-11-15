@@ -92,36 +92,147 @@ export default async function HomePage() {
       <SubscribeForm />
 
       {/* Contribute */}
-      <section className="wrap" id="contribute" aria-labelledby="contribute-h" style={{ paddingBottom: 72 }}>
+      <section className="wrap" id="contribute" aria-labelledby="contribute-h" style={{ paddingBottom: 80 }}>
         <p className="sec-label">Get involved</p>
         <div className="sec-head">
-          <h2 id="contribute-h">Add your model in &lt; 1 hour</h2>
+          <h2 id="contribute-h">Three ways to contribute</h2>
           <a className="btn primary" href="https://github.com/devankit01/healthllm/fork" target="_blank" rel="noopener noreferrer">
             Fork on GitHub
           </a>
         </div>
-        <p className="intro">
-          Any open model that runs in <a href="https://ollama.com" target="_blank" rel="noopener noreferrer">Ollama</a> can
-          be evaluated and listed. No API keys, no cloud costs.
-        </p>
-        <div className="prereq-strip">
-          {[["🐍","Python 3.10+"],["🦙","Ollama running"],["🟩","Node 22+"],["🐙","GitHub account"],["💾","8+ GB RAM"]].map(([icon, label]) => (
-            <div key={label} className="prereq">
-              <span className="prereq-icon">{icon}</span>
-              <span>{label}</span>
+
+        {/* Get involved cards */}
+        <div className="involve-grid">
+          {[
+            {
+              icon: "🧬",
+              title: "Add a model",
+              who: "ML engineers · researchers",
+              body: "Know a health LLM not in the catalog? Open an issue with the HuggingFace ID and we'll add it in 24 hours.",
+              cta: "Add model →",
+              href: "https://github.com/devankit01/healthllm/issues/new?template=add-model-catalog.yml",
+            },
+            {
+              icon: "📊",
+              title: "Submit eval scores",
+              who: "Anyone with a GPU or Apple Silicon",
+              body: "Run our eval script locally on any model and submit the JSON result. All you need is Ollama and Python.",
+              cta: "Submit scores →",
+              href: "https://github.com/devankit01/healthllm/issues/new?template=add-eval-results.yml",
+            },
+            {
+              icon: "📂",
+              title: "Add a dataset",
+              who: "Clinicians · NLP researchers",
+              body: "Have a clinical NLP dataset not in the catalog? Add it — EHR, radiology, drug safety, genomics, all welcome.",
+              cta: "Add dataset →",
+              href: "https://github.com/devankit01/healthllm/issues/new?template=add-dataset.yml",
+            },
+          ].map((c) => (
+            <div key={c.title} className="involve-card">
+              <span className="involve-icon">{c.icon}</span>
+              <div>
+                <p className="involve-who">{c.who}</p>
+                <h3>{c.title}</h3>
+                <p>{c.body}</p>
+                <a className="involve-cta" href={c.href} target="_blank" rel="noopener noreferrer">{c.cta}</a>
+              </div>
             </div>
           ))}
         </div>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 24 }}>
-          <a className="btn primary" href="https://github.com/devankit01/healthllm/issues/new?template=add-model-catalog.yml" target="_blank" rel="noopener noreferrer">
-            Add Model to Catalog
-          </a>
-          <a className="btn" href="https://github.com/devankit01/healthllm/issues/new?template=add-eval-results.yml" target="_blank" rel="noopener noreferrer">
-            Submit Eval Scores
-          </a>
-          <a className="btn" href="https://github.com/devankit01/healthllm/issues/new?template=add-dataset.yml" target="_blank" rel="noopener noreferrer">
-            Add Dataset
-          </a>
+
+        {/* How we evaluate — timeline */}
+        <div style={{ marginTop: 72 }}>
+          <p className="sec-label">How it works</p>
+          <h2 style={{ fontSize: "clamp(20px,3.5vw,28px)", fontWeight: 800, margin: "8px 0 40px" }}>
+            How we evaluate every model
+          </h2>
+          <div className="eval-timeline">
+            {[
+              {
+                step: "01",
+                title: "Pull the model",
+                desc: "Any model available in Ollama works. One command gets it running locally — no cloud, no API keys.",
+                example: "ollama pull meditron:7b",
+                lang: "bash",
+              },
+              {
+                step: "02",
+                title: "Load a clinical dataset",
+                desc: "We use five openly licensed datasets — MedMCQA, MedQA USMLE, PubMedQA, PubHealth, and NCBI Disease. 100 samples each, same seed every time.",
+                example: `# example question from MedMCQA
+Which vitamin deficiency causes scurvy?
+A. Vitamin A  B. Vitamin B12  C. Vitamin C  D. Vitamin D
+
+Answer with one letter only.`,
+                lang: "text",
+              },
+              {
+                step: "03",
+                title: "Run prompts at temperature 0",
+                desc: "Every prompt runs at temperature 0, seed 42. No randomness — the same model on the same hardware always gives the same answer.",
+                example: `python3 scripts/run_evals.py meditron:7b \\
+  --samples 100 \\
+  --hardware "MacBook Pro M3"`,
+                lang: "bash",
+              },
+              {
+                step: "04",
+                title: "Score the replies",
+                desc: "Each eval has a strict scoring rule. For MCQ we extract the first letter. For entity extraction we compute F1. For JSON we check parse validity.",
+                example: `# model replied "The answer is C."
+# scorer extracts → "C"
+# gold answer     → "C"  ✓ correct`,
+                lang: "text",
+              },
+              {
+                step: "05",
+                title: "Compute health score",
+                desc: "The seven scored evals are averaged into a single health score (0–100). A grade from A to E is assigned. Speed is recorded separately — it depends on hardware.",
+                example: `med_knowledge      61.0%
+clinical_reasoning 67.0%
+evidence_reasoning 55.0%
+claim_verification 48.0%
+entity_extraction  44.0% F1
+json_reliability   72.0%
+consistency        74.0%
+─────────────────────────
+Health Score       60.1%  →  C`,
+                lang: "text",
+              },
+              {
+                step: "06",
+                title: "Submit & appear on the leaderboard",
+                desc: "Open an issue with the results JSON or use --push to upload directly. Scores are public, reproducible, and linked to the exact run config.",
+                example: `python3 scripts/run_evals.py meditron:7b --push \\
+  --submitted-by "yourhandle"
+# → score live on leaderboard in seconds`,
+                lang: "bash",
+              },
+            ].map((s) => (
+              <div key={s.step} className="timeline-item">
+                <div className="timeline-step">{s.step}</div>
+                <div className="timeline-body">
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                  <pre className="timeline-code"><code>{s.example}</code></pre>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* prereqs */}
+        <div style={{ marginTop: 48 }}>
+          <p className="filter-group-label" style={{ marginBottom: 12 }}>What you need</p>
+          <div className="prereq-strip">
+            {[["🐍","Python 3.10+"],["🦙","Ollama running"],["🟩","Node 22+"],["🐙","GitHub account"],["💾","8+ GB RAM"]].map(([icon, label]) => (
+              <div key={label} className="prereq">
+                <span className="prereq-icon">{icon}</span>
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
