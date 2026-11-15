@@ -153,4 +153,20 @@ if (existsSync(datasetsPath)) {
   writeFileSync(datasetsPath, html);
 }
 console.log(`Stats updated: ${mc} models, ${dc} datasets`);
+
+// Inject Umami analytics into every HTML page (opt-in via UMAMI_WEBSITE_ID env var)
+const umamiId = process.env.UMAMI_WEBSITE_ID;
+if (umamiId) {
+  const umamiSnippet = `<script defer src="https://cloud.umami.is/script.js" data-website-id="${umamiId}"></script>`;
+  for (const page of ["index.html", "models.html", "datasets.html"]) {
+    const p = join(out, page);
+    if (existsSync(p)) {
+      writeFileSync(p, readFileSync(p, "utf8").replace("</head>", `  ${umamiSnippet}\n</head>`));
+    }
+  }
+  console.log(`Umami analytics injected (id: ${umamiId})`);
+} else {
+  console.log("Umami: UMAMI_WEBSITE_ID not set — analytics skipped (fine for local dev)");
+}
+
 console.log("Wrote build/");
