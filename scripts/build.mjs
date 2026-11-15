@@ -124,19 +124,21 @@ for (const page of ["models.html", "datasets.html"]) {
   }
 }
 
-// Inject real model/dataset counts into index.html stats strip
+// Inject real model/dataset counts into index.html (stats strip, teasers, meta description)
 const indexPath = join(out, "index.html");
 if (existsSync(indexPath)) {
   let html = readFileSync(indexPath, "utf8");
-  html = html.replace(
-    /(<dt>)\d+(<\/dt>\s*<dd>Health LLMs<\/dd>)/,
-    `$1${healthModels.length}$2`
-  );
-  html = html.replace(
-    /(<dt>)\d+(<\/dt>\s*<dd>Datasets<\/dd>)/,
-    `$1${healthDatasets.length}$2`
-  );
+  const mc = healthModels.length;
+  const dc = healthDatasets.length;
+  // Stats strip
+  html = html.replace(/(<dt>)\d+(<\/dt>\s*<dd>Health LLMs<\/dd>)/, `$1${mc}$2`);
+  html = html.replace(/(<dt>)\d+(<\/dt>\s*<dd>Datasets<\/dd>)/, `$1${dc}$2`);
+  // Teaser cards
+  html = html.replace(/\d+ models —/, `${mc} models —`);
+  html = html.replace(/\d+ datasets —/, `${dc} datasets —`);
+  // Meta description
+  html = html.replace(/browse \d+ LLMs, \d+ datasets/, `browse ${mc} LLMs, ${dc} datasets`);
   writeFileSync(indexPath, html);
-  console.log(`Stats updated: ${healthModels.length} models, ${healthDatasets.length} datasets`);
+  console.log(`Stats updated: ${mc} models, ${dc} datasets`);
 }
 console.log("Wrote build/");
