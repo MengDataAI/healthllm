@@ -3,4 +3,5 @@
   publish = "build"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
+  UMAMI_WEBSITE_ID = "d68cc267-522b-4e44-abb9-e64ea0e8c335"
