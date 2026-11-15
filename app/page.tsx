@@ -1,5 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
+import SubscribeForm from "@/components/SubscribeForm";
 
 export default async function HomePage() {
   const supabase = await createClient();
@@ -87,6 +88,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <SubscribeForm />
 
       {/* Contribute */}
       <section className="wrap" id="contribute" aria-labelledby="contribute-h" style={{ paddingBottom: 72 }}>

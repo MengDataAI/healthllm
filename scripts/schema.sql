@@ -71,3 +71,15 @@ alter table public.eval_results enable row level security;
 create policy "Public read health_models" on public.health_models for select using (true);
 create policy "Public read health_datasets" on public.health_datasets for select using (true);
 create policy "Public read eval_results" on public.eval_results for select using (true);
+
+-- Subscribers
+create table if not exists public.subscribers (
+  id uuid default gen_random_uuid() primary key,
+  email text not null unique,
+  created_at timestamptz default now()
+);
+
+alter table public.subscribers enable row level security;
+
+-- Anyone can subscribe; nobody can read the list via the client
+create policy "Public insert subscribers" on public.subscribers for insert with check (true);

@@ -359,6 +359,24 @@ footer { margin-top: 80px; border-top: 1px solid var(--line); padding: 28px 0 40
 .teaser-card p { font-size: 14px; color: var(--muted); margin: 0 0 12px; line-height: 1.6; }
 .teaser-link { font-size: 14px; font-weight: 600; color: var(--accent); }
 
+/* ── Subscribe ── */
+.subscribe-section { background: linear-gradient(135deg, var(--hero-from), var(--hero-to)); padding: 72px 0; margin: 48px 0 0; }
+.subscribe-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.subscribe-copy .sec-label { color: var(--accent-mid); }
+.subscribe-copy h2 { font-size: clamp(22px, 4vw, 32px); font-weight: 800; color: #fff; margin: 8px 0 16px; }
+.subscribe-lede { color: rgba(255,255,255,.75); font-size: 15px; line-height: 1.7; margin: 0; }
+.subscribe-form { display: flex; flex-direction: column; gap: 10px; }
+.subscribe-form input[type="email"] { font: inherit; font-size: 15px; padding: 13px 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.1); color: #fff; outline: none; transition: border-color .15s, box-shadow .15s; }
+.subscribe-form input[type="email"]::placeholder { color: rgba(255,255,255,.45); }
+.subscribe-form input[type="email"]:focus { border-color: var(--accent-mid); box-shadow: 0 0 0 3px rgba(56,189,248,.25); }
+.subscribe-form .btn.primary { align-self: flex-start; }
+.subscribe-success { color: #4ade80; font-weight: 600; font-size: 15px; margin: 0; }
+.subscribe-error { color: #fca5a5; font-size: 14px; margin: 4px 0 0; }
+@media (max-width: 760px) {
+  .subscribe-inner { grid-template-columns: 1fr; gap: 28px; }
+  .subscribe-form .btn.primary { align-self: stretch; text-align: center; }
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .catalog-layout { grid-template-columns: 1fr; }
