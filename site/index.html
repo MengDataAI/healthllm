@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HealthLLM · Health & RAG Evals</title>
-<meta name="description" content="An open leaderboard of open-source LLMs, evaluated for healthcare, RAG, and clinical detection on openly licensed datasets. Add your own model with one pull request.">
+<title>HealthLLM · Health AI Hub</title>
+<meta name="description" content="The open hub for health AI — browse 47 LLMs, 44 datasets, run reproducible evals, and contribute your model in one pull request.">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="styles.css">
 <script>
@@ -16,17 +16,17 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#board">Skip to leaderboard</a>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#top"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health &amp; RAG Evals</small></a>
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health AI Hub</small></a>
     <nav aria-label="Main">
       <a href="#why">Why</a>
       <a href="models.html">Models</a>
       <a href="datasets.html">Datasets</a>
-      <a href="#board">Leaderboard</a>
-      <a href="#add">Add a model</a>
+      <a href="#evals">Evals</a>
+      <a href="#contribute">Contribute</a>
       <a class="gh" href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">GitHub</a>
       <button id="theme" class="icon" type="button" aria-label="Switch colour theme"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
     </nav>
@@ -36,90 +36,32 @@
 <div class="hero-wrap">
   <section class="hero wrap" id="top">
     <p class="eyebrow">Open source · Open data · Run it yourself</p>
-    <h1>Which open LLM can you <span>trust</span> with health data?</h1>
-    <p class="lede">Healthcare AI is moving fast — but most benchmarks are closed, expensive, or not reproducible. HealthLLM is an open leaderboard that scores open-source language models on real clinical tasks: medical knowledge, reasoning, claim verification, disease detection, and RAG reliability.</p>
+    <h1>The open hub for <span>health AI</span></h1>
+    <p class="lede">Browse every open-source health LLM, find the right dataset for your task, and benchmark any model against real clinical evals — all reproducible, all open, no API key required.</p>
     <div class="cta">
-      <a class="btn primary" href="#board">See the leaderboard</a>
-      <a class="btn ghost" href="#how">How it works</a>
-      <a class="btn ghost" href="#add">Add a model</a>
+      <a class="btn primary" href="models.html">Browse Models</a>
+      <a class="btn ghost" href="datasets.html">Browse Datasets</a>
+      <a class="btn ghost" href="#evals">See Evals</a>
     </div>
     <dl class="stats-strip">
-      <div class="stat"><dt>7</dt><dd>Health evals</dd></div>
-      <div class="stat"><dt>6</dt><dd>Models listed</dd></div>
-      <div class="stat"><dt>100</dt><dd>Questions per eval</dd></div>
-      <div class="stat"><dt>0°</dt><dd>Temperature — reproducible</dd></div>
+      <div class="stat"><dt>47</dt><dd>Health LLMs</dd></div>
+      <div class="stat"><dt>44</dt><dd>Datasets</dd></div>
+      <div class="stat"><dt>7</dt><dd>Reproducible evals</dd></div>
+      <div class="stat"><dt>0°</dt><dd>Temperature — always</dd></div>
     </dl>
   </section>
 </div>
 
-  <section id="why" aria-labelledby="why-h">
-    <div class="wrap">
-    <p class="sec-label">The problem</p>
-    <div class="sec-head"><h2 id="why-h">Why this exists</h2></div>
-    <div class="why-grid">
-      <div class="why-card">
-        <span class="why-icon">🏥</span>
-        <h3>Health AI needs transparency</h3>
-        <p>Models are being deployed in clinical tools, triage systems, and patient-facing apps. Without open, reproducible benchmarks it is impossible to know which models are actually safe to use with health data.</p>
-      </div>
-      <div class="why-card">
-        <span class="why-icon">🔬</span>
-        <h3>General benchmarks miss the point</h3>
-        <p>A model that scores well on MMLU can still fail at clinical reasoning, misidentify diseases in a passage, or hallucinate drug interactions. We test specifically for healthcare: facts, reasoning, evidence, and structured output.</p>
-      </div>
-      <div class="why-card">
-        <span class="why-icon">📂</span>
-        <h3>Open data, open scores</h3>
-        <p>Every eval uses a publicly licensed dataset. Every score comes from a results file checked into this repo. No proprietary data, no closed judging, no black-box numbers — just runs anyone can reproduce and verify.</p>
-      </div>
-      <div class="why-card">
-        <span class="why-icon">🤖</span>
-        <h3>RAG changes the picture</h3>
-        <p>Most health deployments use retrieval-augmented generation (RAG) to ground answers in clinical documents. We test JSON reliability and claim verification — the two capabilities that break first in real RAG pipelines.</p>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section class="wrap" id="how" aria-labelledby="how-h">
-    <p class="sec-label">The process</p>
-    <div class="sec-head"><h2 id="how-h">How it works</h2></div>
-    <p class="intro">The whole pipeline runs locally. No API keys, no cloud costs — just Ollama and Python.</p>
-    <ol class="how-steps">
-      <li>
-        <div class="how-num">1</div>
-        <div>
-          <h3>Describe your model</h3>
-          <p>Add a small JSON file to <code>data/models/</code> with the model name, parameter count, licence, and its Ollama tag. That is the only metadata we store.</p>
-        </div>
-      </li>
-      <li>
-        <div class="how-num">2</div>
-        <div>
-          <h3>Run the eval script</h3>
-          <p>The script downloads the benchmark datasets from Hugging Face, asks the model 100 questions per eval at temperature 0, and writes a JSON results file. It takes 20–60 minutes depending on your hardware.</p>
-          <pre><code>python evals/run_eval.py --model my-model-7b \
-  --hardware "M2 Pro, 16 GB" --submitted-by your-handle</code></pre>
-        </div>
-      </li>
-      <li>
-        <div class="how-num">3</div>
-        <div>
-          <h3>Open a pull request</h3>
-          <p>Commit the model file and results file. The health rating — the unweighted mean of all seven evals — appears on the leaderboard automatically once the PR is merged.</p>
-        </div>
-      </li>
-    </ol>
-  </section>
+<main id="main">
 
   <!-- ── Hub teasers ── -->
-  <section class="wrap hub-teasers" aria-label="Browse models and datasets">
+  <section class="wrap hub-teasers" aria-label="Browse">
     <div class="teaser-grid">
       <a class="teaser-card" href="models.html">
         <div class="teaser-icon">🧠</div>
         <div>
           <h3>Health LLMs</h3>
-          <p>33 open-source models — from Meditron and OpenBioLLM to ClinicalBERT and MedGemma. Each with use case, links, and license.</p>
+          <p>47 models — Meditron, OpenBioLLM, MedGemma, BioBERT, ClinicalBERT, MedCPT and more. Each with use case, HuggingFace link, and license.</p>
           <span class="teaser-link">Browse all models →</span>
         </div>
       </a>
@@ -127,56 +69,62 @@
         <div class="teaser-icon">📊</div>
         <div>
           <h3>Health Datasets</h3>
-          <p>29 datasets for training and evaluation — Medical QA, NER, Radiology, Clinical Records, Drug Safety, Genomics and more.</p>
+          <p>44 datasets — Medical QA, NER, Radiology, Clinical Records, Drug Safety, Genomics, Instruction Tuning and more.</p>
           <span class="teaser-link">Browse all datasets →</span>
         </div>
       </a>
     </div>
   </section>
 
-  <section class="wrap" id="board" aria-labelledby="board-h">
-    <div class="sec-head">
-      <h2 id="board-h">Leaderboard</h2>
-      <div class="tabs" id="domains" role="tablist" aria-label="Domain"></div>
-    </div>
-
-    <div id="notice"></div>
-
-    <div id="health-view">
-      <div class="controls">
-        <input id="q" type="search" placeholder="Search models" aria-label="Search models">
-        <select id="lic" aria-label="Licence type">
-          <option value="all">All licences</option>
-          <option value="open-source">Open source</option>
-          <option value="open-weights">Open weights</option>
-        </select>
-        <label class="check"><input id="med" type="checkbox"> Medical models only</label>
+  <!-- ── Why ── -->
+  <section id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <p class="sec-label">The problem</p>
+      <div class="sec-head"><h2 id="why-h">Why this exists</h2></div>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">🏥</span>
+          <h3>Health AI needs transparency</h3>
+          <p>Models are being deployed in clinical tools, triage systems, and patient-facing apps. Without open, reproducible benchmarks it is impossible to know which models are actually safe to use with health data.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🔬</span>
+          <h3>General benchmarks miss the point</h3>
+          <p>A model that scores well on MMLU can still fail at clinical reasoning, misidentify diseases in a passage, or hallucinate drug interactions. We test specifically for healthcare: facts, reasoning, evidence, and structured output.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">📂</span>
+          <h3>Open data, open scores</h3>
+          <p>Every eval uses a publicly licensed dataset. Every score comes from a results file checked into this repo. No proprietary data, no closed judging — just runs anyone can reproduce and verify.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🤖</span>
+          <h3>RAG changes the picture</h3>
+          <p>Most health deployments use retrieval-augmented generation (RAG) to ground answers in clinical documents. We test JSON reliability and claim verification — the two capabilities that break first in real RAG pipelines.</p>
+        </div>
       </div>
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Leaderboard table, scrolls sideways on small screens">
-        <table id="table"></table>
-      </div>
-      <p class="fine" id="rating-note"></p>
     </div>
-
-    <div id="security-view" hidden></div>
   </section>
 
+  <!-- ── Evals ── -->
   <section class="wrap" id="evals" aria-labelledby="evals-h">
-    <div class="sec-head"><h2 id="evals-h">What gets measured</h2></div>
-    <p class="intro">Each eval asks a fixed number of questions sampled with a fixed seed, at temperature 0. Open an eval to see an example of what the model is asked and what counts as right.</p>
+    <p class="sec-label">What we measure</p>
+    <div class="sec-head"><h2 id="evals-h">7 health evals</h2></div>
+    <p class="intro">Each eval asks 100 questions sampled with a fixed seed, at temperature 0. Every number is fully reproducible.</p>
     <div class="cards" id="eval-cards"></div>
-    <p class="fine">Examples are written for this page to show the format. They are not rows from the datasets. Dataset licences are as listed on each dataset card; check the card before reusing the data.</p>
+    <p class="fine">Examples are written for this page to show the format. Dataset licences are listed on each dataset card; check the card before reusing the data.</p>
   </section>
 
-  <section class="wrap" id="add" aria-labelledby="add-h">
-    <div class="sec-head"><h2 id="add-h">Add a model</h2></div>
-    <p class="intro">Any open model that runs in Ollama can be listed. You need Python 3.10 or newer, Ollama, and a GitHub account.</p>
+  <!-- ── Contribute ── -->
+  <section class="wrap" id="contribute" aria-labelledby="contribute-h">
+    <p class="sec-label">Get involved</p>
+    <div class="sec-head"><h2 id="contribute-h">Run an eval, submit a score</h2></div>
+    <p class="intro">Any open model that runs in Ollama can be evaluated and listed. You need Python 3.10+, Ollama, and a GitHub account. The whole process takes under an hour.</p>
     <ol class="steps">
       <li>
-        <h3>Describe the model</h3>
-        <p>Fork the repo and add one file in <code>data/models/</code>. The file name is the model's id.</p>
-<pre><code>// data/models/my-model-7b.json
-{
+        <h3>Describe your model</h3>
+        <p>Fork the repo and create <code>data/models/my-model-7b.json</code>:</p>
+<pre><code>{
   "id": "my-model-7b",
   "name": "My Model 7B",
   "developer": "Who released it",
@@ -189,32 +137,33 @@
 }</code></pre>
       </li>
       <li>
-        <h3>Run the evals</h3>
-        <p>Pull the model, then run the eval script. It downloads the datasets, asks the questions, and writes a results file.</p>
+        <h3>Run the eval script</h3>
+        <p>Pull the model in Ollama, install deps, and run:</p>
 <pre><code>pip install -r evals/requirements.txt
 ollama pull my-model:7b
 python evals/run_eval.py --model my-model-7b \
   --hardware "M2 Pro, 16 GB" --submitted-by your-handle</code></pre>
       </li>
       <li>
-        <h3>Check it</h3>
-        <p>Validate the data and look at the site locally before you send it.</p>
+        <h3>Verify locally</h3>
+        <p>Check data integrity and preview the site before submitting:</p>
 <pre><code>npm run check
 npm start</code></pre>
       </li>
       <li>
         <h3>Open a pull request</h3>
-        <p>Commit the model file and <code>data/results/my-model-7b.json</code>. Keep the default sample count and seed so your scores are comparable with the others.</p>
+        <p>Commit <code>data/models/my-model-7b.json</code> + <code>data/results/my-model-7b.json</code>. Keep the default seed so scores are comparable.</p>
       </li>
     </ol>
-    <p class="intro">The full guide, including how to list a model without scores and how to propose a new eval, is in <a href="https://github.com/devankit01/healthllm/blob/main/docs/ADDING_A_MODEL.md" target="_blank" rel="noopener">docs/ADDING_A_MODEL.md</a>.</p>
+    <p class="intro" style="margin-top:16px">Full guide: <a href="https://github.com/devankit01/healthllm/blob/main/docs/ADDING_A_MODEL.md" target="_blank" rel="noopener">docs/ADDING_A_MODEL.md ↗</a></p>
   </section>
+
 </main>
 
 <footer>
   <div class="wrap foot">
-    <p><strong>Not medical advice, and not clinical validation.</strong> A high score on these evals does not make a model safe to use in patient care. Scores come from small samples and are submitted by contributors.</p>
-    <p>MIT licensed. <a href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">Source on GitHub</a> · <span id="built"></span></p>
+    <p><strong>Not medical advice, and not clinical validation.</strong> A high score on evals does not make a model safe to use in patient care.</p>
+    <p>MIT licensed · <a href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">Source on GitHub</a> · <span id="built"></span></p>
   </div>
 </footer>
 
