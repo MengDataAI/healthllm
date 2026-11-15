@@ -373,10 +373,17 @@ footer { margin-top: 80px; border-top: 1px solid var(--line); padding: 28px 0 40
   .flag-grid { grid-template-columns: 1fr; }
   .flag-row code, .flag-row span { display: block; }
 }
+/* ── Mobile nav drawer ── */
+.nav-toggle { display: none; }
+.mobile-nav { display: flex; flex-direction: column; background: var(--surface); border-top: 1px solid var(--line); padding: 12px 0 16px; }
+.mobile-nav a { padding: 11px 20px; font-size: 15px; font-weight: 500; color: var(--muted); text-decoration: none; border-radius: 0; }
+.mobile-nav a:hover, .mobile-nav a:focus { color: var(--ink); background: var(--accent-soft); }
+
 @media (max-width: 760px) {
   .wrap { padding: 0 16px; }
   .hero { padding: 56px 16px 48px; }
-  .brand small, header nav a:not(.gh) { display: none; }
+  .brand small, header nav a:not(.gh):not(.icon) { display: none; }
+  .nav-toggle { display: flex; }
   .steps { grid-template-columns: minmax(0, 1fr); }
   .cards { grid-template-columns: minmax(0, 1fr); }
   .why-grid { grid-template-columns: minmax(0, 1fr); }

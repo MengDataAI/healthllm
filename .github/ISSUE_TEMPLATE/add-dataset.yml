@@ -1,0 +1,87 @@
+name: "📊 Add dataset to catalog"
+description: "Request adding a health/biomedical dataset to the HealthLLM datasets catalog"
+title: "[Dataset] "
+labels: ["dataset-catalog"]
+body:
+  - type: markdown
+    attributes:
+      value: "Fill in the fields and we'll add it to the datasets page. Dataset must have an open or credentialed (PhysioNet) licence."
+
+  - type: input
+    id: name
+    attributes:
+      label: Dataset name
+      placeholder: "e.g. MedQA (USMLE)"
+    validations:
+      required: true
+
+  - type: input
+    id: hf
+    attributes:
+      label: HuggingFace dataset ID (if available)
+      placeholder: "e.g. GBaker/MedQA-USMLE-4-options"
+
+  - type: input
+    id: size
+    attributes:
+      label: Size
+      placeholder: "e.g. 12.7k questions"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Dataset type
+      options:
+        - Medical QA
+        - NER
+        - Clinical Records
+        - Radiology
+        - Biomedical Literature
+        - Drug Safety
+        - Dialogue
+        - NLI
+        - Fact Checking
+        - Instruction Tuning
+        - Genomics
+        - Physiological Signals
+        - Summarization
+        - Clinical Terminology
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access level
+      options:
+        - open (no account needed)
+        - credentialed (PhysioNet registration required)
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: "e.g. MIT, CC BY 4.0, Public Domain"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description (1–2 sentences)
+      placeholder: "What is in this dataset?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case (1–2 sentences)
+      placeholder: "What should someone use this dataset for?"
+    validations:
+      required: true

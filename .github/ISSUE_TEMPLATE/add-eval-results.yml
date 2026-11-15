@@ -1,0 +1,59 @@
+name: "📈 Submit eval results"
+description: "Submit benchmark scores for a model you ran against the 7 HealthLLM evals"
+title: "[Eval] "
+labels: ["eval-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this if you have run `evals/run_eval.py` and want to submit scores to the leaderboard.
+
+        **Quick check before submitting:**
+        - [ ] Used `--samples 100` and `--seed 42` (the defaults)
+        - [ ] All 7 evals completed (required for the health rating)
+        - [ ] `data/results/my-model.json` was written by the script (not edited by hand)
+
+  - type: input
+    id: model_id
+    attributes:
+      label: Model ID (filename without .json)
+      placeholder: "e.g. meditron-7b"
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware used
+      placeholder: "e.g. M2 Pro 16 GB, RTX 4090 24 GB, A100 80 GB"
+    validations:
+      required: true
+
+  - type: input
+    id: ollama_version
+    attributes:
+      label: Ollama version
+      placeholder: "e.g. 0.3.12  (run: ollama --version)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: scores
+    attributes:
+      label: Paste your scores
+      placeholder: |
+        med-knowledge          72.3  (n=100)
+        clinical-reasoning     65.1  (n=100)
+        evidence-reasoning     61.0  (n=100)
+        claim-verification     58.4  (n=100)
+        entity-extraction      44.2  (n=100)
+        json-reliability       91.0  (n=100)
+        consistency            78.0  (n=100)
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      placeholder: "Anything unusual about the run, quantisation used, re-run reason, etc."

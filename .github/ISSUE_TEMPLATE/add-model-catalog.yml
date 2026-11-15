@@ -1,0 +1,104 @@
+name: "🧠 Add model to catalog"
+description: "Request adding an open-source health LLM to the HealthLLM catalog"
+title: "[Model] "
+labels: ["model-catalog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the fields below and we'll add your model to the catalog. No Ollama or eval run needed — just metadata.
+
+  - type: input
+    id: name
+    attributes:
+      label: Model name
+      placeholder: "e.g. Meditron 7B"
+    validations:
+      required: true
+
+  - type: input
+    id: hf
+    attributes:
+      label: HuggingFace repo ID
+      placeholder: "e.g. epfl-llm/meditron-7b"
+    validations:
+      required: true
+
+  - type: input
+    id: developer
+    attributes:
+      label: Developer / organisation
+      placeholder: "e.g. EPFL"
+    validations:
+      required: true
+
+  - type: input
+    id: params
+    attributes:
+      label: Parameter count
+      placeholder: "e.g. 7B"
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: "e.g. Apache-2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license_type
+    attributes:
+      label: License type
+      options:
+        - open-source (Apache, MIT, CC BY, etc.)
+        - open-weights (Llama, Gemma, Qwen, etc.)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: medical_tuned
+    attributes:
+      label: Is this model medical / health fine-tuned?
+      options:
+        - "Yes — fine-tuned on medical data"
+        - "No — general model used for health tasks"
+    validations:
+      required: true
+
+  - type: input
+    id: ollama
+    attributes:
+      label: Ollama tag (if available)
+      placeholder: "e.g. meditron:7b (leave blank if not on Ollama)"
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case (1–2 sentences)
+      placeholder: "What is this model best used for in health contexts?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: strength
+    attributes:
+      label: Best for (specific strengths)
+      placeholder: "e.g. USMLE-style questions, clinical decision support, drug-disease reasoning"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Task tags (pick from list or add new)
+      placeholder: |
+        Choose any that apply:
+        medical-qa, clinical-reasoning, biomedical, ner, rag, clinical-notes, ehr,
+        drug-safety, research, efficient, edge, general, structured-output,
+        relation-extraction, embeddings, multimodal, dialogue, multilingual,
+        llama-based, bert-based, mistral-based, gemma-based
+    validations:
+      required: true
