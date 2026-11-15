@@ -114,4 +114,13 @@ writeFileSync(
   join(out, "data.json"),
   JSON.stringify({ ...evalData, models, results, health_models: healthModels, health_datasets: healthDatasets, built_at: new Date().toISOString().slice(0, 10) })
 );
+// Inline catalog data into catalog pages so they render without a fetch
+const catalogPayload = JSON.stringify({ health_models: healthModels, health_datasets: healthDatasets });
+const catalogScript = `<script>window.__CATALOG__=${catalogPayload};</script>`;
+for (const page of ["models.html", "datasets.html"]) {
+  const p = join(out, page);
+  if (existsSync(p)) {
+    writeFileSync(p, readFileSync(p, "utf8").replace('<script src="catalog.js"></script>', `${catalogScript}\n<script src="catalog.js"></script>`));
+  }
+}
 console.log("Wrote build/");

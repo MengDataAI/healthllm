@@ -6,6 +6,8 @@
 <title>HealthLLM · Health AI Hub</title>
 <meta name="description" content="The open hub for health AI — browse 47 LLMs, 44 datasets, run reproducible evals, and contribute your model in one pull request.">
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="app.js" as="script">
 <link rel="stylesheet" href="styles.css">
 <script>
   (function () {
@@ -27,6 +29,7 @@
       <a href="datasets.html">Datasets</a>
       <a href="#evals">Evals</a>
       <a href="#contribute">Contribute</a>
+      <a href="#about">About</a>
       <a class="gh" href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">GitHub</a>
       <button id="theme" class="icon" type="button" aria-label="Switch colour theme"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
     </nav>
@@ -118,16 +121,35 @@
   <!-- ── Contribute ── -->
   <section class="wrap" id="contribute" aria-labelledby="contribute-h">
     <p class="sec-label">Get involved</p>
-    <div class="sec-head"><h2 id="contribute-h">Run an eval, submit a score</h2></div>
-    <p class="intro">Any open model that runs in Ollama can be evaluated and listed. You need Python 3.10+, Ollama, and a GitHub account. The whole process takes under an hour.</p>
-    <ol class="steps">
-      <li>
-        <h3>Describe your model</h3>
-        <p>Fork the repo and create <code>data/models/my-model-7b.json</code>:</p>
+    <div class="sec-head">
+      <h2 id="contribute-h">Add your model in &lt; 1 hour</h2>
+      <a class="btn primary" href="https://github.com/devankit01/healthllm/fork" target="_blank" rel="noopener">Fork on GitHub</a>
+    </div>
+    <p class="intro">Any open model that runs in <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> can be evaluated and listed. No API keys, no cloud costs.</p>
+
+    <!-- Prerequisites strip -->
+    <div class="prereq-strip">
+      <div class="prereq"><span class="prereq-icon">🐍</span><span>Python 3.10+</span></div>
+      <div class="prereq"><span class="prereq-icon">🦙</span><span>Ollama running</span></div>
+      <div class="prereq"><span class="prereq-icon">🟩</span><span>Node 18+</span></div>
+      <div class="prereq"><span class="prereq-icon">🐙</span><span>GitHub account</span></div>
+      <div class="prereq"><span class="prereq-icon">💾</span><span>8+ GB RAM (7B model)</span></div>
+    </div>
+
+    <!-- Visual stepper -->
+    <div class="contrib-steps">
+
+      <div class="contrib-step">
+        <div class="cstep-num">1</div>
+        <div class="cstep-body">
+          <h3>Describe the model <span class="cstep-time">~2 min</span></h3>
+          <p>Fork the repo and create <code>data/models/my-model-7b.json</code>. The <code>id</code> must match the filename.</p>
+          <div class="code-block">
+            <button class="copy-btn" aria-label="Copy code">Copy</button>
 <pre><code>{
   "id": "my-model-7b",
   "name": "My Model 7B",
-  "developer": "Who released it",
+  "developer": "Organisation name",
   "params_b": 7,
   "license": "Apache-2.0",
   "license_type": "open-source",
@@ -135,27 +157,110 @@
   "hf": "org/my-model-7b",
   "medical_tuned": false
 }</code></pre>
-      </li>
-      <li>
-        <h3>Run the eval script</h3>
-        <p>Pull the model in Ollama, install deps, and run:</p>
+          </div>
+          <p class="cstep-note">💡 <code>license_type</code> is <code>"open-source"</code> for Apache/MIT or <code>"open-weights"</code> for Llama/Gemma licences.</p>
+        </div>
+      </div>
+
+      <div class="contrib-step">
+        <div class="cstep-num">2</div>
+        <div class="cstep-body">
+          <h3>Run all 7 evals <span class="cstep-time">~20–60 min</span></h3>
+          <p>The script downloads the benchmark datasets from HuggingFace, asks 100 questions per eval at temperature 0, and writes your results file.</p>
+          <div class="code-block">
+            <button class="copy-btn" aria-label="Copy code">Copy</button>
 <pre><code>pip install -r evals/requirements.txt
 ollama pull my-model:7b
-python evals/run_eval.py --model my-model-7b \
-  --hardware "M2 Pro, 16 GB" --submitted-by your-handle</code></pre>
-      </li>
-      <li>
-        <h3>Verify locally</h3>
-        <p>Check data integrity and preview the site before submitting:</p>
-<pre><code>npm run check
-npm start</code></pre>
-      </li>
-      <li>
-        <h3>Open a pull request</h3>
-        <p>Commit <code>data/models/my-model-7b.json</code> + <code>data/results/my-model-7b.json</code>. Keep the default seed so scores are comparable.</p>
-      </li>
-    </ol>
-    <p class="intro" style="margin-top:16px">Full guide: <a href="https://github.com/devankit01/healthllm/blob/main/docs/ADDING_A_MODEL.md" target="_blank" rel="noopener">docs/ADDING_A_MODEL.md ↗</a></p>
+
+python evals/run_eval.py \
+  --model my-model-7b \
+  --hardware "M2 Pro, 16 GB" \
+  --submitted-by your-github-handle</code></pre>
+          </div>
+          <div class="output-preview">
+            <p class="output-label">Expected output:</p>
+            <pre class="output-code">Running 7 eval(s) on my-model:7b, 100 samples each
+  med-knowledge
+  clinical-reasoning
+  ...
+  Wrote data/results/my-model-7b.json
+  med-knowledge          72.3  (n=100)
+  clinical-reasoning     65.1  (n=100)</pre>
+          </div>
+          <div class="eval-flags">
+            <p class="cstep-note">⚡ Useful flags:</p>
+            <div class="flag-grid">
+              <div class="flag-row"><code>--dry-run</code><span>Test setup without Ollama (fake model)</span></div>
+              <div class="flag-row"><code>--samples 20</code><span>Quick trial run (don't submit)</span></div>
+              <div class="flag-row"><code>--evals med-knowledge</code><span>Run specific evals only</span></div>
+              <div class="flag-row"><code>--inspect med-knowledge</code><span>Debug a dataset's field layout</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contrib-step">
+        <div class="cstep-num">3</div>
+        <div class="cstep-body">
+          <h3>Verify locally <span class="cstep-time">~1 min</span></h3>
+          <p>Check all data files are valid and preview the site before submitting.</p>
+          <div class="code-block">
+            <button class="copy-btn" aria-label="Copy code">Copy</button>
+<pre><code>npm run check   # validates JSON files
+npm start       # preview at http://localhost:4173</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="contrib-step">
+        <div class="cstep-num">4</div>
+        <div class="cstep-body">
+          <h3>Open a pull request <span class="cstep-time">~2 min</span></h3>
+          <p>Commit exactly these two files and open a PR. The CI check runs automatically and a maintainer reviews within a few days.</p>
+          <div class="pr-files">
+            <div class="pr-file"><span class="pr-file-icon">📄</span><code>data/models/my-model-7b.json</code></div>
+            <div class="pr-file"><span class="pr-file-icon">📊</span><code>data/results/my-model-7b.json</code></div>
+          </div>
+          <p class="cstep-note">⚠️ Keep <code>--samples 100</code> and <code>--seed 42</code> (defaults) so every model answers the same questions and scores are comparable.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contrib-footer">
+      <a class="btn primary" href="https://github.com/devankit01/healthllm/fork" target="_blank" rel="noopener">Fork the repo →</a>
+      <a class="btn" href="https://github.com/devankit01/healthllm/blob/main/docs/ADDING_A_MODEL.md" target="_blank" rel="noopener">Full guide (ADDING_A_MODEL.md)</a>
+      <a class="btn" href="https://github.com/devankit01/healthllm/issues/new" target="_blank" rel="noopener">Ask a question</a>
+    </div>
+  </section>
+
+  <!-- ── About / CEO ── -->
+  <section class="wrap" id="about" aria-labelledby="about-h">
+    <p class="sec-label">The team</p>
+    <div class="sec-head"><h2 id="about-h">About HealthLLM</h2></div>
+    <div class="about-grid">
+      <div class="about-mission">
+        <h3>Our mission</h3>
+        <p>Healthcare AI is moving faster than the benchmarks that evaluate it. HealthLLM exists to close that gap — open benchmarks, open scores, open data. Every number on this site can be reproduced by anyone with a laptop and an afternoon.</p>
+        <p>We believe that safe health AI starts with transparency: open models, reproducible evals, and community-driven oversight. No black-box scores, no proprietary datasets, no closed judging.</p>
+        <div class="about-links">
+          <a href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener" class="about-link">⭐ Star on GitHub</a>
+          <a href="https://github.com/devankit01/healthllm/issues" target="_blank" rel="noopener" class="about-link">💬 Discuss</a>
+          <a href="https://github.com/devankit01/healthllm/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="about-link">🤝 Contribute</a>
+        </div>
+      </div>
+      <div class="founder-card">
+        <div class="founder-avatar">AK</div>
+        <div class="founder-info">
+          <h3 class="founder-name">Ankit Gupta</h3>
+          <p class="founder-title">Founder &amp; Maintainer</p>
+          <p class="founder-bio">Building open infrastructure for health AI. Believer in reproducible science, open-source models, and transparent evaluation.</p>
+          <div class="founder-links">
+            <a href="https://github.com/devankit01" target="_blank" rel="noopener" class="founder-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -168,5 +273,19 @@ npm start</code></pre>
 </footer>
 
 <script src="app.js"></script>
+<script>
+  // Copy buttons on code blocks
+  document.querySelectorAll(".copy-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var code = btn.closest(".code-block").querySelector("code");
+      if (!code) return;
+      navigator.clipboard.writeText(code.textContent.trim()).then(function() {
+        btn.textContent = "Copied!";
+        btn.classList.add("copied");
+        setTimeout(function() { btn.textContent = "Copy"; btn.classList.remove("copied"); }, 2000);
+      });
+    });
+  });
+</script>
 </body>
 </html>

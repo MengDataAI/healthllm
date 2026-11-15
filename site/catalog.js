@@ -305,17 +305,23 @@
     if (clr) clr.addEventListener("click", clearAll);
   }
 
-  // ── Boot ─────────────────────────────────────────────────────────────────────
-  fetch("data.json")
-    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(function (json) {
-      data = json;
-      buildTagPills();
-      bindControls();
-      renderGrid();
-    })
-    .catch(function (err) {
-      var g = $("catalog-grid");
-      if (g) g.innerHTML = '<p class="catalog-empty-state">Could not load data: ' + esc(err.message) + '</p>';
-    });
+  // ── Boot — use inlined data if available, else fetch ─────────────────────────
+  function boot(json) {
+    data = json;
+    buildTagPills();
+    bindControls();
+    renderGrid();
+  }
+
+  if (window.__CATALOG__) {
+    boot(window.__CATALOG__);
+  } else {
+    fetch("data.json")
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(boot)
+      .catch(function (err) {
+        var g = $("catalog-grid");
+        if (g) g.innerHTML = '<p class="catalog-empty-state">Could not load data: ' + esc(err.message) + '</p>';
+      });
+  }
 })();
