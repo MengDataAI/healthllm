@@ -1,1 +1,1 @@
-huggingface-hub>=0.23
+# sync_hf.py uses only Python stdlib (urllib, json, re) — no pip install needed

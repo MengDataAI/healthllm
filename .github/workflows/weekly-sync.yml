@@ -31,9 +31,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install "huggingface-hub>=0.23"
-
       - name: Run HuggingFace sync
         id: sync
         run: |
