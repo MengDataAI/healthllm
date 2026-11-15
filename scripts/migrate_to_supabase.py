@@ -1,21 +1,13 @@
 """
 Seed Supabase with data from the existing JSON catalog files.
+Uses the REST API directly (urllib) — no Python supabase client needed.
 
 Usage:
-    pip install supabase
-    SUPABASE_URL=https://... SUPABASE_SERVICE_KEY=... python scripts/migrate_to_supabase.py
-
-The SERVICE key (not publishable key) is required to bypass RLS for bulk inserts.
-Get it from: Supabase dashboard → Settings → API → service_role key
+    SUPABASE_URL=https://... SUPABASE_SERVICE_KEY=sb_secret_... python scripts/migrate_to_supabase.py
 """
 
-import json, os, sys
+import json, os, sys, urllib.request, urllib.error
 from pathlib import Path
-
-try:
-    from supabase import create_client
-except ImportError:
-    sys.exit("Run: pip install supabase")
 
 ROOT = Path(__file__).parent.parent
 
@@ -25,23 +17,51 @@ key = os.environ.get("SUPABASE_SERVICE_KEY")
 if not url or not key:
     sys.exit(
         "Set SUPABASE_URL and SUPABASE_SERVICE_KEY env vars.\n"
-        "Get the service key from Supabase dashboard → Settings → API → service_role"
+        "Example:\n"
+        "  SUPABASE_URL=https://inqdudvzrkehjcmflbpg.supabase.co \\\n"
+        "  SUPABASE_SERVICE_KEY=sb_secret_... \\\n"
+        "  python scripts/migrate_to_supabase.py"
     )
 
-supabase = create_client(url, key)
+url = url.rstrip("/")
+
+HEADERS = {
+    "apikey": key,
+    "Authorization": f"Bearer {key}",
+    "Content-Type": "application/json",
+    "Prefer": "resolution=merge-duplicates,return=representation",
+}
+
+
+def upsert_batch(table, rows):
+    endpoint = f"{url}/rest/v1/{table}"
+    for i in range(0, len(rows), 100):
+        batch = rows[i : i + 100]
+        body = json.dumps(batch).encode()
+        req = urllib.request.Request(endpoint, data=body, headers=HEADERS, method="POST")
+        try:
+            with urllib.request.urlopen(req) as resp:
+                resp.read()
+            hi = min(i + 100, len(rows))
+            print(f"  {table}: upserted rows {i + 1}–{hi}")
+        except urllib.error.HTTPError as e:
+            err = e.read().decode()
+            sys.exit(f"HTTP {e.code} upserting {table} rows {i+1}+: {err}")
+
 
 # ── Load JSON files ────────────────────────────────────────────────────────────
-models = json.loads((ROOT / "data" / "health-models.json").read_text())
-datasets = json.loads((ROOT / "data" / "health-datasets.json").read_text())
+models_path = ROOT / "data" / "health-models.json"
+datasets_path = ROOT / "data" / "health-datasets.json"
+
+if not models_path.exists():
+    sys.exit(f"Not found: {models_path}")
+if not datasets_path.exists():
+    sys.exit(f"Not found: {datasets_path}")
+
+models = json.loads(models_path.read_text())
+datasets = json.loads(datasets_path.read_text())
 
 print(f"Loaded {len(models)} models, {len(datasets)} datasets")
-
-# ── Upsert in batches of 100 ───────────────────────────────────────────────────
-def upsert_batch(table: str, rows: list[dict]):
-    for i in range(0, len(rows), 100):
-        batch = rows[i:i+100]
-        res = supabase.table(table).upsert(batch, on_conflict="id").execute()
-        print(f"  {table}: upserted rows {i+1}–{min(i+100, len(rows))}")
 
 print("\nMigrating models...")
 upsert_batch("health_models", models)
@@ -49,4 +69,4 @@ upsert_batch("health_models", models)
 print("\nMigrating datasets...")
 upsert_batch("health_datasets", datasets)
 
-print(f"\nDone. {len(models)} models + {len(datasets)} datasets in Supabase.")
+print(f"\nDone. {len(models)} models + {len(datasets)} datasets seeded into Supabase.")
