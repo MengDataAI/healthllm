@@ -247,9 +247,184 @@
     });
   }
 
+  // ── Catalog: health models + datasets ──────────────────────────────────────
+
+  var catalogState = {
+    models: { q: "", tag: "all" },
+    datasets: { q: "", tag: "all" }
+  };
+
+  var MODEL_TASK_LABELS = {
+    "medical-qa": "Medical QA", "clinical-reasoning": "Clinical Reasoning",
+    "biomedical-nlp": "Biomedical NLP", "ner": "NER", "rag": "RAG",
+    "clinical-notes": "Clinical Notes", "ehr": "EHR", "drug-safety": "Drug Safety",
+    "research": "Research", "efficient": "Efficient", "edge": "Edge / Mobile",
+    "general": "General", "structured-output": "Structured Output",
+    "relation-extraction": "Relation Extraction", "embeddings": "Embeddings",
+    "instruction-tuned": "Instruction Tuned", "safety": "Safety", "large-model": "Large (>30B)"
+  };
+
+  var DATASET_TYPE_LABELS = {
+    "Medical QA": "Medical QA", "Research QA": "Research QA", "NER": "NER",
+    "Fact Checking": "Fact Checking", "Clinical Records": "Clinical Records",
+    "Radiology": "Radiology", "Biomedical Literature": "Literature",
+    "Drug-Drug Interaction": "Drug Safety", "Drug Side Effects": "Drug Safety",
+    "Dialogue": "Dialogue", "Natural Language Inference": "NLI",
+    "Physiological Signals": "Signals", "Genomics": "Genomics",
+    "Scientific Literature": "Literature"
+  };
+
+  function accessBadge(access) {
+    if (access === "credentialed") return '<span class="badge badge-warn">credentialed</span>';
+    return '<span class="badge badge-open">open</span>';
+  }
+
+  function renderModelCard(m) {
+    var hfLink = m.hf ? '<a class="card-link" href="https://huggingface.co/' + esc(m.hf) + '" target="_blank" rel="noopener">HuggingFace ↗</a>' : "";
+    var ollamaLink = m.ollama ? '<a class="card-link" href="https://ollama.com/library/' + esc(m.ollama.split(":")[0]) + '" target="_blank" rel="noopener">Ollama ↗</a>' : "";
+    var medBadge = m.medical_tuned ? '<span class="badge badge-med">medical</span>' : '<span class="badge badge-gen">general</span>';
+    var licBadge = m.license_type === "open-source"
+      ? '<span class="badge badge-open">open source</span>'
+      : '<span class="badge badge-weights">open weights</span>';
+    var tags = (m.tags || []).map(function (t) {
+      return '<span class="pill">' + esc(MODEL_TASK_LABELS[t] || t) + "</span>";
+    }).join("");
+
+    return '<article class="hf-card">' +
+      '<div class="hf-card-top">' +
+        '<div class="hf-card-icon model-icon">🧠</div>' +
+        '<div class="hf-card-badges">' + medBadge + licBadge + '</div>' +
+      '</div>' +
+      '<h3 class="hf-card-title">' + esc(m.name) + '</h3>' +
+      '<p class="hf-card-dev">' + esc(m.developer) + ' · ' + esc(m.params) + '</p>' +
+      '<p class="hf-card-usecase">' + esc(m.usecase) + '</p>' +
+      '<p class="hf-card-strength"><strong>Best for:</strong> ' + esc(m.strength) + '</p>' +
+      '<div class="hf-card-tags">' + tags + '</div>' +
+      '<div class="hf-card-links">' + hfLink + ollamaLink +
+        '<span class="hf-card-lic">' + esc(m.license) + '</span>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function renderDatasetCard(d) {
+    var hfLink = d.hf ? '<a class="card-link" href="https://huggingface.co/datasets/' + esc(d.hf) + '" target="_blank" rel="noopener">HuggingFace ↗</a>' : "";
+    var typeLabel = DATASET_TYPE_LABELS[d.type] || d.type;
+    var tags = (d.tags || []).map(function (t) { return '<span class="pill">' + esc(t) + "</span>"; }).join("");
+
+    return '<article class="hf-card">' +
+      '<div class="hf-card-top">' +
+        '<div class="hf-card-icon dataset-icon">📊</div>' +
+        '<div class="hf-card-badges">' + accessBadge(d.access) +
+          '<span class="badge badge-type">' + esc(typeLabel) + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<h3 class="hf-card-title">' + esc(d.name) + '</h3>' +
+      '<p class="hf-card-dev">' + esc(d.size) + ' · ' + esc(d.license) + '</p>' +
+      '<p class="hf-card-usecase">' + esc(d.description) + '</p>' +
+      '<p class="hf-card-strength"><strong>Use for:</strong> ' + esc(d.usecase) + '</p>' +
+      '<div class="hf-card-tags">' + tags + '</div>' +
+      '<div class="hf-card-links">' + hfLink +
+        (d.access === "credentialed" ? '<span class="card-link-note">Requires PhysioNet credentials</span>' : '') +
+      '</div>' +
+    '</article>';
+  }
+
+  function uniqueTags(items) {
+    var seen = {}, out = [];
+    items.forEach(function (m) { (m.tags || []).forEach(function (t) { if (!seen[t]) { seen[t] = 1; out.push(t); } }); });
+    return out;
+  }
+
+  function uniqueTypes(items) {
+    var seen = {}, out = [];
+    items.forEach(function (d) { var t = DATASET_TYPE_LABELS[d.type] || d.type; if (!seen[t]) { seen[t] = 1; out.push({ key: d.type, label: t }); } });
+    return out;
+  }
+
+  function renderFilterTags(containerId, tags, currentTag, onSelect) {
+    var el = $(containerId);
+    if (!el) return;
+    var html = '<button class="filter-tag ' + (currentTag === "all" ? "active" : "") + '" data-tag="all">All</button>';
+    tags.forEach(function (t) {
+      var key = t.key || t, label = t.label || MODEL_TASK_LABELS[t] || t;
+      html += '<button class="filter-tag ' + (currentTag === key ? "active" : "") + '" data-tag="' + esc(key) + '">' + esc(label) + '</button>';
+    });
+    el.innerHTML = html;
+    el.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-tag]");
+      if (b) onSelect(b.getAttribute("data-tag"));
+    });
+  }
+
+  function filterModels() {
+    var q = catalogState.models.q.trim().toLowerCase();
+    var tag = catalogState.models.tag;
+    return (data.health_models || []).filter(function (m) {
+      if (tag !== "all" && (!m.tags || m.tags.indexOf(tag) === -1)) return false;
+      return !q || (m.name + " " + m.developer + " " + m.usecase + " " + m.strength).toLowerCase().indexOf(q) !== -1;
+    });
+  }
+
+  function filterDatasets() {
+    var q = catalogState.datasets.q.trim().toLowerCase();
+    var tag = catalogState.datasets.tag;
+    return (data.health_datasets || []).filter(function (d) {
+      if (tag !== "all" && d.type !== tag) return false;
+      return !q || (d.name + " " + d.description + " " + d.usecase + " " + d.type).toLowerCase().indexOf(q) !== -1;
+    });
+  }
+
+  function renderModelsGrid() {
+    var items = filterModels();
+    var el = $("models-grid");
+    var count = $("models-count");
+    if (!el) return;
+    el.innerHTML = items.length
+      ? items.map(renderModelCard).join("")
+      : '<p class="catalog-empty">No models match. <button onclick="catalogState.models.q=\'\';catalogState.models.tag=\'all\';renderModelsGrid();">Clear filters</button></p>';
+    if (count) count.textContent = items.length + " of " + (data.health_models || []).length;
+  }
+
+  function renderDatasetsGrid() {
+    var items = filterDatasets();
+    var el = $("datasets-grid");
+    var count = $("datasets-count");
+    if (!el) return;
+    el.innerHTML = items.length
+      ? items.map(renderDatasetCard).join("")
+      : '<p class="catalog-empty">No datasets match. <button onclick="catalogState.datasets.q=\'\';catalogState.datasets.tag=\'all\';renderDatasetsGrid();">Clear filters</button></p>';
+    if (count) count.textContent = items.length + " of " + (data.health_datasets || []).length;
+  }
+
+  function initCatalogs() {
+    var hm = data.health_models || [];
+    var hd = data.health_datasets || [];
+
+    // Model filters
+    renderFilterTags("models-tags", uniqueTags(hm), "all", function (tag) {
+      catalogState.models.tag = tag;
+      renderFilterTags("models-tags", uniqueTags(hm), tag, arguments.callee);
+      renderModelsGrid();
+    });
+    var mq = $("models-q");
+    if (mq) mq.addEventListener("input", function (e) { catalogState.models.q = e.target.value; renderModelsGrid(); });
+
+    // Dataset filters
+    renderFilterTags("datasets-tags", uniqueTypes(hd), "all", function (tag) {
+      catalogState.datasets.tag = tag;
+      renderFilterTags("datasets-tags", uniqueTypes(hd), tag, arguments.callee);
+      renderDatasetsGrid();
+    });
+    var dq = $("datasets-q");
+    if (dq) dq.addEventListener("input", function (e) { catalogState.datasets.q = e.target.value; renderDatasetsGrid(); });
+
+    renderModelsGrid();
+    renderDatasetsGrid();
+  }
+
   fetch("data.json")
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(function (json) { data = json; bind(); renderStatic(); renderDomain(); renderTable(); })
+    .then(function (json) { data = json; bind(); renderStatic(); renderDomain(); renderTable(); initCatalogs(); })
     .catch(function (err) {
       $("notice").innerHTML = '<div class="notice"><p><strong>Could not load the data.</strong> Run <code>npm start</code> from the repo root so the site is served with data.json. (' +
         esc(err.message) + ")</p></div>";

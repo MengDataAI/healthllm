@@ -23,9 +23,9 @@
     <a class="brand" href="#top"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health &amp; RAG Evals</small></a>
     <nav aria-label="Main">
       <a href="#why">Why</a>
-      <a href="#how">How it works</a>
+      <a href="#models">Models</a>
+      <a href="#datasets">Datasets</a>
       <a href="#board">Leaderboard</a>
-      <a href="#evals">Evals</a>
       <a href="#add">Add a model</a>
       <a class="gh" href="https://github.com/devankit01/healthllm" target="_blank" rel="noopener">GitHub</a>
       <button id="theme" class="icon" type="button" aria-label="Switch colour theme"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
@@ -110,6 +110,36 @@
         </div>
       </li>
     </ol>
+  </section>
+
+  <!-- ── Models catalog ── -->
+  <section class="wrap catalog-section" id="models" aria-labelledby="models-h">
+    <p class="sec-label">Browse</p>
+    <div class="sec-head">
+      <h2 id="models-h">Health LLMs</h2>
+      <span class="catalog-count" id="models-count"></span>
+    </div>
+    <p class="intro">Open-source language models for healthcare — from specialized clinical models to general models with strong health performance. Each entry shows the best use case so you can pick the right model for your task.</p>
+    <div class="catalog-toolbar">
+      <div class="search-wrap"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input id="models-q" type="search" placeholder="Search models…" aria-label="Search models"></div>
+      <div class="filter-tags" id="models-tags" role="group" aria-label="Filter by task"></div>
+    </div>
+    <div class="hf-grid" id="models-grid"></div>
+  </section>
+
+  <!-- ── Datasets catalog ── -->
+  <section class="wrap catalog-section" id="datasets" aria-labelledby="datasets-h">
+    <p class="sec-label">Browse</p>
+    <div class="sec-head">
+      <h2 id="datasets-h">Health Datasets</h2>
+      <span class="catalog-count" id="datasets-count"></span>
+    </div>
+    <p class="intro">Openly licensed datasets for training, fine-tuning, and evaluating health AI — spanning clinical records, medical QA, NER, radiology, drug safety, and more.</p>
+    <div class="catalog-toolbar">
+      <div class="search-wrap"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input id="datasets-q" type="search" placeholder="Search datasets…" aria-label="Search datasets"></div>
+      <div class="filter-tags" id="datasets-tags" role="group" aria-label="Filter by type"></div>
+    </div>
+    <div class="hf-grid" id="datasets-grid"></div>
   </section>
 
   <section class="wrap" id="board" aria-labelledby="board-h">

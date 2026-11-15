@@ -27,6 +27,18 @@ function jsonFiles(dir) {
 const isStr = (v) => typeof v === "string" && v.trim() !== "";
 const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 
+// Health models catalog
+const healthModels = (() => {
+  try { return JSON.parse(readFileSync(join(root, "data/health-models.json"), "utf8")); }
+  catch { return []; }
+})();
+
+// Health datasets catalog
+const healthDatasets = (() => {
+  try { return JSON.parse(readFileSync(join(root, "data/health-datasets.json"), "utf8")); }
+  catch { return []; }
+})();
+
 // Evals
 const evalData = readJson(join(root, "data/evals.json")) || { domains: [], evals: [], rating: {} };
 const evalIds = new Set();
@@ -100,6 +112,6 @@ mkdirSync(out, { recursive: true });
 cpSync(join(root, "site"), out, { recursive: true });
 writeFileSync(
   join(out, "data.json"),
-  JSON.stringify({ ...evalData, models, results, built_at: new Date().toISOString().slice(0, 10) })
+  JSON.stringify({ ...evalData, models, results, health_models: healthModels, health_datasets: healthDatasets, built_at: new Date().toISOString().slice(0, 10) })
 );
 console.log("Wrote build/");
