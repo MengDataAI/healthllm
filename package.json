@@ -4,13 +4,28 @@
   "private": true,
   "description": "Open-source LLMs, evaluated for healthcare — RAG, reasoning, and clinical detection.",
   "license": "MIT",
-  "type": "module",
   "scripts": {
-    "check": "node scripts/build.mjs --check",
-    "build": "node scripts/build.mjs",
-    "start": "node scripts/build.mjs && node scripts/serve.mjs"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check": "node scripts/check.mjs",
+    "build:static": "node scripts/build.mjs"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.16.7",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
   }
 }

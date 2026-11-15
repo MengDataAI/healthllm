@@ -1,0 +1,58 @@
+import type { HealthModel } from "@/types";
+
+export default function ModelCard({ model }: { model: HealthModel }) {
+  const icon = model.medical_tuned ? "🧬" : "🤖";
+  const hfUrl = `https://huggingface.co/${model.hf}`;
+  const ollamaUrl = model.ollama ? `https://ollama.com/library/${model.ollama.split(":")[0]}` : null;
+
+  return (
+    <div className="hf-card">
+      <div className="hf-card-top">
+        <span className="hf-card-icon">{icon}</span>
+        <div className="hf-card-badges">
+          {model.medical_tuned ? (
+            <span className="badge badge-med">Medical</span>
+          ) : (
+            <span className="badge badge-gen">General</span>
+          )}
+          <span className={`badge ${model.license_type === "open-source" ? "badge-open" : "badge-weights"}`}>
+            {model.license_type === "open-source" ? "Open Source" : "Open Weights"}
+          </span>
+          {model.params !== "?" && (
+            <span className="badge badge-type">{model.params}</span>
+          )}
+        </div>
+      </div>
+
+      <h3 className="hf-card-title">{model.name}</h3>
+      <p className="hf-card-dev">{model.developer}</p>
+      <p className="hf-card-usecase">{model.usecase}</p>
+      {model.strength && (
+        <p className="hf-card-strength">
+          <strong>Best for:</strong> {model.strength}
+        </p>
+      )}
+
+      <div className="hf-card-tags">
+        {model.tags.slice(0, 4).map((tag) => (
+          <span key={tag} className="pill">{tag}</span>
+        ))}
+      </div>
+
+      <div className="hf-card-links">
+        <a className="card-link" href={hfUrl} target="_blank" rel="noopener noreferrer">
+          HuggingFace ↗
+        </a>
+        {ollamaUrl && (
+          <a className="card-link" href={ollamaUrl} target="_blank" rel="noopener noreferrer">
+            Ollama ↗
+          </a>
+        )}
+        {!ollamaUrl && (
+          <span className="card-link-note">Not on Ollama</span>
+        )}
+        <span className="hf-card-lic">{model.license}</span>
+      </div>
+    </div>
+  );
+}

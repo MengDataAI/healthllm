@@ -1,0 +1,55 @@
+export interface HealthModel {
+  id: string;
+  name: string;
+  developer: string;
+  params: string;
+  params_size: "tiny" | "small" | "medium" | "large";
+  medical_tuned: boolean;
+  license: string;
+  license_type: "open-source" | "open-weights";
+  hf: string;
+  ollama: string | null;
+  specialty: string[];
+  usecase: string;
+  strength: string;
+  tags: string[];
+  featured: boolean;
+  created_at?: string;
+}
+
+export interface HealthDataset {
+  id: string;
+  name: string;
+  type: string;
+  size: string;
+  task: string;
+  access: "open" | "credentialed";
+  license: string;
+  hf: string;
+  specialty: string[];
+  description: string;
+  usecase: string;
+  tags: string[];
+  featured: boolean;
+  created_at?: string;
+}
+
+export interface EvalResult {
+  id: string;
+  model_id: string;
+  model_name: string;
+  hardware: string;
+  ollama_version: string;
+  submitted_by: string;
+  med_knowledge: number;
+  clinical_reasoning: number;
+  evidence_reasoning: number;
+  claim_verification: number;
+  entity_extraction: number;
+  json_reliability: number;
+  consistency: number;
+  health_score: number;
+  samples: number;
+  seed: number;
+  submitted_at: string;
+}
