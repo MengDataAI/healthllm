@@ -1,0 +1,16 @@
+{
+  "name": "healthllm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-source LLMs, evaluated for healthcare — RAG, reasoning, and clinical detection.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/build.mjs --check",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
