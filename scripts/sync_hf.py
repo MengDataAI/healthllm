@@ -272,14 +272,12 @@ def sync_models(api: HfApi, existing_hf: set[str], limit: int, dry_run: bool) ->
         print(f"  Searching models tag={tag!r} ...")
         try:
             results = api.list_models(
-                tags=[tag],
+                search=tag,
                 sort="downloads",
                 direction=-1,
                 limit=limit,
-                fetch_model_card_data=False,
-                library=None,
             )
-        except HfHubHTTPError as e:
+        except (HfHubHTTPError, TypeError) as e:
             print(f"    HF API error: {e}", file=sys.stderr)
             continue
 
@@ -337,12 +335,12 @@ def sync_datasets(api: HfApi, existing_hf: set[str], limit: int, dry_run: bool) 
         print(f"  Searching datasets tag={tag!r} ...")
         try:
             results = api.list_datasets(
-                tags=[tag],
+                search=tag,
                 sort="downloads",
                 direction=-1,
                 limit=limit,
             )
-        except HfHubHTTPError as e:
+        except (HfHubHTTPError, TypeError) as e:
             print(f"    HF API error: {e}", file=sys.stderr)
             continue
 

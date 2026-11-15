@@ -37,6 +37,7 @@ jobs:
       - name: Run HuggingFace sync
         id: sync
         run: |
+          set -euo pipefail
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             ARGS="--dry-run"
@@ -46,7 +47,8 @@ jobs:
             LIMIT="200"
           fi
 
-          python scripts/sync_hf.py $ARGS --limit "$LIMIT" | tee /tmp/sync_output.txt
+          python scripts/sync_hf.py $ARGS --limit "$LIMIT" > /tmp/sync_output.txt 2>&1
+          cat /tmp/sync_output.txt
 
           # Parse the counts printed by the script
           NEW_MODELS=$(grep "^SYNC_NEW_MODELS=" /tmp/sync_output.txt | cut -d= -f2 || echo "0")
