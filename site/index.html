@@ -22,6 +22,8 @@
   <div class="wrap bar">
     <a class="brand" href="#top"><span class="mark" aria-hidden="true">◧</span> HealthLLM <small>Health &amp; RAG Evals</small></a>
     <nav aria-label="Main">
+      <a href="#why">Why</a>
+      <a href="#how">How it works</a>
       <a href="#board">Leaderboard</a>
       <a href="#evals">Evals</a>
       <a href="#add">Add a model</a>
@@ -31,16 +33,83 @@
   </div>
 </header>
 
-<main id="top">
-  <section class="hero wrap">
+<div class="hero-wrap">
+  <section class="hero wrap" id="top">
     <p class="eyebrow">Open source · Open data · Run it yourself</p>
-    <h1>Which open LLM can you trust with health data?</h1>
-    <p class="lede">An open leaderboard of open-source language models, scored on healthcare tasks using openly licensed datasets. Every number here comes from a run anyone can repeat on their own machine.</p>
+    <h1>Which open LLM can you <span>trust</span> with health data?</h1>
+    <p class="lede">Healthcare AI is moving fast — but most benchmarks are closed, expensive, or not reproducible. HealthLLM is an open leaderboard that scores open-source language models on real clinical tasks: medical knowledge, reasoning, claim verification, disease detection, and RAG reliability.</p>
     <div class="cta">
       <a class="btn primary" href="#board">See the leaderboard</a>
-      <a class="btn" href="#add">Add a model</a>
+      <a class="btn ghost" href="#how">How it works</a>
+      <a class="btn ghost" href="#add">Add a model</a>
     </div>
-    <dl class="counts" id="counts" aria-label="What is in the repo"></dl>
+    <dl class="stats-strip">
+      <div class="stat"><dt>7</dt><dd>Health evals</dd></div>
+      <div class="stat"><dt>6</dt><dd>Models listed</dd></div>
+      <div class="stat"><dt>100</dt><dd>Questions per eval</dd></div>
+      <div class="stat"><dt>0°</dt><dd>Temperature — reproducible</dd></div>
+    </dl>
+  </section>
+</div>
+
+  <section id="why" aria-labelledby="why-h">
+    <div class="wrap">
+    <p class="sec-label">The problem</p>
+    <div class="sec-head"><h2 id="why-h">Why this exists</h2></div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-icon">🏥</span>
+        <h3>Health AI needs transparency</h3>
+        <p>Models are being deployed in clinical tools, triage systems, and patient-facing apps. Without open, reproducible benchmarks it is impossible to know which models are actually safe to use with health data.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">🔬</span>
+        <h3>General benchmarks miss the point</h3>
+        <p>A model that scores well on MMLU can still fail at clinical reasoning, misidentify diseases in a passage, or hallucinate drug interactions. We test specifically for healthcare: facts, reasoning, evidence, and structured output.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">📂</span>
+        <h3>Open data, open scores</h3>
+        <p>Every eval uses a publicly licensed dataset. Every score comes from a results file checked into this repo. No proprietary data, no closed judging, no black-box numbers — just runs anyone can reproduce and verify.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">🤖</span>
+        <h3>RAG changes the picture</h3>
+        <p>Most health deployments use retrieval-augmented generation (RAG) to ground answers in clinical documents. We test JSON reliability and claim verification — the two capabilities that break first in real RAG pipelines.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="how" aria-labelledby="how-h">
+    <p class="sec-label">The process</p>
+    <div class="sec-head"><h2 id="how-h">How it works</h2></div>
+    <p class="intro">The whole pipeline runs locally. No API keys, no cloud costs — just Ollama and Python.</p>
+    <ol class="how-steps">
+      <li>
+        <div class="how-num">1</div>
+        <div>
+          <h3>Describe your model</h3>
+          <p>Add a small JSON file to <code>data/models/</code> with the model name, parameter count, licence, and its Ollama tag. That is the only metadata we store.</p>
+        </div>
+      </li>
+      <li>
+        <div class="how-num">2</div>
+        <div>
+          <h3>Run the eval script</h3>
+          <p>The script downloads the benchmark datasets from Hugging Face, asks the model 100 questions per eval at temperature 0, and writes a JSON results file. It takes 20–60 minutes depending on your hardware.</p>
+          <pre><code>python evals/run_eval.py --model my-model-7b \
+  --hardware "M2 Pro, 16 GB" --submitted-by your-handle</code></pre>
+        </div>
+      </li>
+      <li>
+        <div class="how-num">3</div>
+        <div>
+          <h3>Open a pull request</h3>
+          <p>Commit the model file and results file. The health rating — the unweighted mean of all seven evals — appears on the leaderboard automatically once the PR is merged.</p>
+        </div>
+      </li>
+    </ol>
   </section>
 
   <section class="wrap" id="board" aria-labelledby="board-h">
