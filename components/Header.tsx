@@ -58,7 +58,7 @@ export default function Header() {
           </button>
         </nav>
       </div>
-      <nav className="mobile-nav" id="mobile-nav" hidden={!open} aria-label="Mobile navigation">
+      <nav className={`mobile-nav${open ? " open" : ""}`} id="mobile-nav" aria-label="Mobile navigation">
         {links.map((l) => (
           <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
             {l.label}
