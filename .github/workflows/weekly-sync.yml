@@ -1,0 +1,94 @@
+name: Weekly HuggingFace Catalog Sync
+
+on:
+  schedule:
+    # Every Monday at 09:00 UTC
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — print changes without writing files"
+        type: boolean
+        default: false
+      limit:
+        description: "Max results per search tag (default 200)"
+        type: number
+        default: 200
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install "huggingface-hub>=0.23"
+
+      - name: Run HuggingFace sync
+        id: sync
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          fi
+          LIMIT="${{ inputs.limit }}"
+          if [ -z "$LIMIT" ]; then
+            LIMIT="200"
+          fi
+
+          python scripts/sync_hf.py $ARGS --limit "$LIMIT" | tee /tmp/sync_output.txt
+
+          # Parse the counts printed by the script
+          NEW_MODELS=$(grep "^SYNC_NEW_MODELS=" /tmp/sync_output.txt | cut -d= -f2 || echo "0")
+          NEW_DATASETS=$(grep "^SYNC_NEW_DATASETS=" /tmp/sync_output.txt | cut -d= -f2 || echo "0")
+          TOTAL_NEW=$(grep "^SYNC_TOTAL_NEW=" /tmp/sync_output.txt | cut -d= -f2 || echo "0")
+
+          echo "new_models=${NEW_MODELS}"   >> "$GITHUB_OUTPUT"
+          echo "new_datasets=${NEW_DATASETS}" >> "$GITHUB_OUTPUT"
+          echo "total_new=${TOTAL_NEW}"     >> "$GITHUB_OUTPUT"
+
+      - name: Skip if nothing new
+        if: steps.sync.outputs.total_new == '0' || inputs.dry_run == true
+        run: |
+          echo "Nothing new to add (or dry run). Skipping PR creation."
+
+      - name: Create pull request
+        if: steps.sync.outputs.total_new != '0' && inputs.dry_run != true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "auto/catalog-sync-${{ github.run_number }}"
+          base: main
+          commit-message: |
+            catalog: add ${{ steps.sync.outputs.new_models }} models + ${{ steps.sync.outputs.new_datasets }} datasets from HuggingFace
+          title: "Weekly sync: ${{ steps.sync.outputs.new_models }} new models, ${{ steps.sync.outputs.new_datasets }} new datasets"
+          body: |
+            ## Automated HuggingFace catalog sync
+
+            This PR was opened automatically by the [weekly-sync workflow](.github/workflows/weekly-sync.yml).
+
+            | Catalog | New entries |
+            |---------|------------|
+            | Health LLMs (`data/health-models.json`) | ${{ steps.sync.outputs.new_models }} |
+            | Datasets (`data/health-datasets.json`)  | ${{ steps.sync.outputs.new_datasets }} |
+
+            ### Before merging
+
+            - [ ] Skim the new entries — auto-generated `usecase` and `strength` fields may need a human polish
+            - [ ] Check that `license` values look correct (some HuggingFace models don't publish a license)
+            - [ ] Run `npm run check` locally (or wait for the CI check on this PR)
+            - [ ] Remove any entries that are clearly not health-related (false positives from tag search)
+
+            ---
+            *Triggered by scheduled run on ${{ github.run_id }}*
+          labels: "catalog-sync,automated"
+          draft: false
