@@ -22,7 +22,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medmcqa",
@@ -47,7 +48,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "checked"
   },
   {
     "id": "pubmedqa",
@@ -74,7 +76,8 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "status": "checked"
   },
   {
     "id": "pubhealth",
@@ -100,7 +103,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mednli",
@@ -126,7 +130,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ncbi-disease",
@@ -135,7 +140,7 @@
     "size": "793 abstracts",
     "task": "entity-extraction",
     "access": "open",
-    "license": "Public Domain",
+    "license": "Unknown on Hugging Face (NCBI public-domain claim not confirmed)",
     "hf": "ncbi/ncbi_disease",
     "specialty": [
       "disease-detection"
@@ -151,7 +156,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "checked"
   },
   {
     "id": "bc5cdr",
@@ -177,7 +183,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-iv",
@@ -204,7 +211,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-cxr",
@@ -230,7 +238,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "chexpert",
@@ -256,7 +265,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "nih-chest-xray",
@@ -282,7 +292,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "vqa-rad",
@@ -308,7 +319,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medmentions",
@@ -334,7 +346,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bioasq",
@@ -358,7 +371,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "head-qa",
@@ -385,7 +399,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medquad",
@@ -410,7 +425,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "meddialog",
@@ -435,7 +451,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medical-meadow",
@@ -459,7 +476,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "eicu",
@@ -486,7 +504,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "pubmed-rct",
@@ -512,7 +531,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ddi-extraction",
@@ -538,7 +558,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sider",
@@ -563,7 +584,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "jnlpba",
@@ -588,7 +610,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "pubmed-abstracts",
@@ -613,7 +636,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "cord-19",
@@ -639,7 +663,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "physionet-ecg",
@@ -664,7 +689,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinvar",
@@ -690,7 +716,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "biored",
@@ -716,7 +743,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ms2",
@@ -742,7 +770,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medical-o1-reasoning",
@@ -768,7 +797,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medical-reasoning-sft-120b",
@@ -794,7 +824,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "healthcaremagic-100k",
@@ -820,7 +851,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mental-health-counseling",
@@ -845,7 +877,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medical-questions-pairs",
@@ -869,7 +902,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "wiki-medical-terms",
@@ -894,7 +928,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinical-trials-history",
@@ -920,7 +955,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "loinc-terminology",
@@ -946,7 +982,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "icd10-terminology",
@@ -972,7 +1009,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medical-transcription",
@@ -996,7 +1034,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "epfl-guidelines",
@@ -1022,7 +1061,8 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medalpaca-flashcards",
@@ -1046,7 +1086,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinical-ie",
@@ -1072,7 +1113,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "pubmed-central-oa",
@@ -1099,7 +1141,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mteb-medical-qa",
@@ -1121,7 +1164,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "qanastek-elrc-medical-v2",
@@ -1145,7 +1189,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "zabir1996-mimic-medical-imaging-qa",
@@ -1168,7 +1213,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "lavita-medical-qa-shared-task-v1-toy",
@@ -1190,7 +1236,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "quirkydatascientist-chatgpt-4o-medical-qa-dataset-50000",
@@ -1212,7 +1259,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "blinoff-medical-qa-ru-data",
@@ -1234,7 +1282,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bofenghuang-medical-qa-fr-v0.1",
@@ -1260,7 +1309,8 @@
       "English",
       "French",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "misterwho31-russian-medical-qa-synthetic",
@@ -1282,7 +1332,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "shibing624-huatuo-medical-qa-sharegpt",
@@ -1304,7 +1355,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infiniflow-medical-qa",
@@ -1326,7 +1378,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "hungnm-vietnamese-medical-qa",
@@ -1348,7 +1401,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "eswardivi-medical-qa",
@@ -1370,7 +1424,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "dataagent-medical-qa-instruction-zhtw",
@@ -1393,7 +1448,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "stoddur-medical-qa-tokenized",
@@ -1415,7 +1471,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "tesutato-medical-multiple-choice-qa",
@@ -1437,7 +1494,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bala1524-medical-qa-mistral7b-finetuning",
@@ -1462,7 +1520,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "alimoameri-drhast-persian-medical-qa",
@@ -1484,7 +1543,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "indohealth-nlp-ncd-instruct-tuning-medical-qa-indonesian",
@@ -1507,7 +1567,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "prithvi1029-medquad-medical-qa",
@@ -1529,7 +1590,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "falan42-medicalqa-tr",
@@ -1551,7 +1613,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "f1ow421-medical-qa-sft-ru",
@@ -1574,7 +1637,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "whalning-chinese-medical-qa",
@@ -1597,7 +1661,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bolin97-medicalqa",
@@ -1620,7 +1685,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "xingqiang-medical-entity-qa-data",
@@ -1642,7 +1708,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "arittra-bangla-medical-qa-cot-and-non-cot",
@@ -1667,7 +1734,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mustafaibrahim-medical-arabic-qa",
@@ -1690,7 +1758,8 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sakshamrzt-medical-qa",
@@ -1712,7 +1781,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "dim-medical-qa-ru-data",
@@ -1734,7 +1804,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bowang0911-medicalqachunkretrieval",
@@ -1756,7 +1827,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "khopilot-khmer-medical-qa",
@@ -1781,7 +1853,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "shams03-ara-egy-medical-qa",
@@ -1803,7 +1876,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "hajerbchn-arabic-medical-qa",
@@ -1826,7 +1900,8 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "open-llm-leaderboard-old-details-kabster-biomistral-medicalqa-ft",
@@ -1850,7 +1925,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "gunulhona-medical-qa-dataset-merged",
@@ -1872,7 +1948,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "jinxing6609-medical-insurance-qa",
@@ -1894,7 +1971,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "huy0404206-vietnamese-medical-qa",
@@ -1916,7 +1994,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "lavita-medical-qa-shared-task-v1-all",
@@ -1938,7 +2017,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "falan42-medicalqa-part7-en",
@@ -1960,7 +2040,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "zaiath-syed-med-medical-qa-synthetic-4k",
@@ -1983,7 +2064,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "thefactoryx-edition-0218-lavita-medical-qa-shared-task-v1-toy-readymade",
@@ -2005,7 +2087,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "rodriguescarson-adaption-medical-qa-diagnosis-treatment-aug",
@@ -2029,7 +2112,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "khoaliamle-vietnamese-medical-qa",
@@ -2052,7 +2136,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "madilcy-arabic-medical-qa-merged-maqa-mmmlu-mi",
@@ -2075,7 +2160,8 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "marin-community-datashop-medical-qa",
@@ -2097,7 +2183,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "crawlfeeds-medical-health-qa-articles-dataset",
@@ -2123,7 +2210,8 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "kkomyoeminaung-myanmar-medical-qa",
@@ -2146,7 +2234,8 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "graf-medmcqa-bonvoyage-39995-recall-0.5-qwen3-4b-medical-qa-ht",
@@ -2170,7 +2259,8 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "lmassaron-medical-cardiology-qa",
@@ -2192,7 +2282,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "gdllelf-medical-qa-dataset",
@@ -2214,7 +2305,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-pubmedqa-train",
@@ -2237,7 +2329,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-pubmedsumm-train",
@@ -2260,7 +2353,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "zechen-nlp-meditron-clinical-guidelines",
@@ -2282,7 +2376,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-pubmedqa-test",
@@ -2305,7 +2400,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-mtsample-test",
@@ -2327,7 +2423,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-medmcqa-test",
@@ -2349,7 +2446,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-hoc-test",
@@ -2371,7 +2469,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-medqa-train",
@@ -2393,7 +2492,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-bionli-test",
@@ -2415,7 +2515,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ddi2013-test",
@@ -2437,7 +2538,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-medqa-test",
@@ -2459,7 +2561,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-chemprot-train",
@@ -2481,7 +2584,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-plos-test",
@@ -2503,7 +2607,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "nlp-fbk-dyspnea-clinical-notes",
@@ -2525,7 +2630,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-hoc-train",
@@ -2547,7 +2653,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ddi2013-train",
@@ -2569,7 +2676,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-cochranepls-1shot-test",
@@ -2591,7 +2699,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ncbi-disease-train",
@@ -2613,7 +2722,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ncbi-disease-test",
@@ -2635,7 +2745,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ms2-test",
@@ -2657,7 +2768,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-chemprot-dev",
@@ -2679,7 +2791,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-hoc-1shot-test",
@@ -2701,7 +2814,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-medqa-1shot-test",
@@ -2723,7 +2837,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-chemprot-test",
@@ -2745,7 +2860,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sadaftb-clinical-nlp-patient-notes",
@@ -2767,7 +2883,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ephraimmm-clinical-nlp-benchmark-dataset",
@@ -2791,7 +2908,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-pubmed-summ-1shot-test",
@@ -2814,7 +2932,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ddi2013-dev",
@@ -2836,7 +2955,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-biomedical-novelty-claim-corpus",
@@ -2860,7 +2980,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ncbi-disease-dev",
@@ -2882,7 +3003,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-abs-data-train",
@@ -2904,7 +3026,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ms2-train",
@@ -2926,7 +3049,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-cochranepls-test",
@@ -2948,7 +3072,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-cochranepls-train",
@@ -2970,7 +3095,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-bc5cdr-chemical-test",
@@ -2992,7 +3118,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-litcovid-train",
@@ -3014,7 +3141,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-bc5cdr-chemical-dev",
@@ -3036,7 +3164,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-ms2-1shot-test",
@@ -3058,7 +3187,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-plos-train",
@@ -3080,7 +3210,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-pubmedqa-1shot-test",
@@ -3103,7 +3234,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-plos-1shot-test",
@@ -3125,7 +3257,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-litcovid-1shot-test",
@@ -3147,7 +3280,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "toolevalxm-medshare-clinicalnlp-raw",
@@ -3169,7 +3303,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "toolevalxm-medshare-clinicalnlp",
@@ -3191,7 +3326,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-bc5cdr-chemical-train",
@@ -3213,7 +3349,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-abs-data-test",
@@ -3235,7 +3372,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "humamzaman-clinical-nlp-extraction",
@@ -3257,7 +3395,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "clinicalnlplab-litcovid-test",
@@ -3279,7 +3418,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sadaftb-clinical-nlp-dataset-raw",
@@ -3301,7 +3441,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sadaftb-clinical-nlp-test",
@@ -3323,7 +3464,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "adapting-chinese-biomedical-ner-dataset",
@@ -3347,7 +3489,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "healthcare-biomedical-ai-pregnancy-medication-constraint-evaluation-dataset",
@@ -3372,7 +3515,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "healthcare-biomedical-ai-primary-care-prescription-constraint-evaluation-dataset",
@@ -3397,7 +3541,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "healthcare-biomedical-ai-migraine-acute-treatment-plan-correction-and-self-correction-trajectory-dataset",
@@ -3420,7 +3565,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "kewserseid-biomedical-instruction-dataset",
@@ -3443,7 +3589,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "paolo-ruggirello-biomedical-dataset",
@@ -3466,7 +3613,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "hfut-mmh-lab-multimodal-mental-health-dataset-mmh",
@@ -3489,7 +3637,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ourafla-mental-health-text-classification-dataset",
@@ -3511,7 +3660,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "heliosbrahma-mental-health-chatbot-dataset",
@@ -3534,7 +3684,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "jason1966-alexteboul-diabetes-health-indicators-dataset",
@@ -3557,7 +3708,8 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "khushal212-health-dataset",
@@ -3579,7 +3731,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "africanobyamugisha-asr-mental-health-luganda-dataset",
@@ -3601,7 +3754,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "falah-mental-health-dataset4fine-tuning",
@@ -3623,7 +3777,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "hssling-health-data-factory-datasets",
@@ -3645,7 +3800,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "kicaulah-dataset-health",
@@ -3669,7 +3825,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "amar524-mental-health-dataset",
@@ -3691,7 +3848,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sabin1234-real-scrap-health-compile-romanized-dataset",
@@ -3713,7 +3871,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ai-enthusiasm-community-vietnamese-health-dataset",
@@ -3738,7 +3897,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "njerikahoro-paza-health-audio-dataset",
@@ -3760,7 +3920,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mpingale-mental-health-chat-dataset",
@@ -3782,7 +3943,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "medarsiddhant-health-qa-finetune-dataset",
@@ -3804,7 +3966,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "zahrizhalali-mental-health-conversational-dataset",
@@ -3828,7 +3991,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sam20032212-mental-health-text-classification-dataset",
@@ -3850,7 +4014,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "digitalumuganda-monolingual-health-dataset",
@@ -3872,7 +4037,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "malvintnw-indonesian-regional-air-quality-and-public-health-monitoring-dataset",
@@ -3894,7 +4060,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "electricsheepafrica-africa-synth-maternal-health-hepatitis-b-mtct-dataset-all",
@@ -3916,7 +4083,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "karenwky-pet-health-symptoms-dataset",
@@ -3938,7 +4106,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "anirbansaha-health-misinformation-reddit-dataset",
@@ -3960,7 +4129,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "pooja-thiru-gaming-and-mental-health-dataset",
@@ -3982,7 +4152,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "kedarcv-clair-health-medical-datasets",
@@ -4004,7 +4175,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "ihsansaad24-mental-health-text-classification-dataset",
@@ -4026,7 +4198,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "thamizhmani07-mental-health-text-classification-dataset",
@@ -4049,7 +4222,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sirethank-en-ru-health-only-dataset",
@@ -4073,7 +4247,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "electricsheepafrica-africa-synth-mental-health-depression-dataset-all",
@@ -4095,7 +4270,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sabin1234-nepali-scrap-health-instruction-dataset",
@@ -4117,7 +4293,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sir-lab-mental-health-knowledge-dataset",
@@ -4139,7 +4316,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "nayma11-mental-health-text-classification-dataset",
@@ -4161,7 +4339,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "electricsheepafrica-africa-synth-maternal-health-preeclampsia-dataset-all",
@@ -4183,7 +4362,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "m42-health-ancestry-dataset",
@@ -4205,7 +4385,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "electricsheepafrica-africa-synth-mental-health-anxiety-dataset-all",
@@ -4227,7 +4408,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "balgabekj-mental-health-text-classification-dataset",
@@ -4249,7 +4431,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sambanankhu-instruction-public-health-dataset",
@@ -4271,7 +4454,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "iqbalpurba26-health-topic-dataset",
@@ -4293,7 +4477,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "shularp-350k-dataset-health-ar-en-th",
@@ -4315,7 +4500,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "lbakar-health-log-extraction-dataset",
@@ -4337,7 +4523,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "healthteam-350k-dataset-health-ar-en-th-tokenized",
@@ -4359,7 +4546,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "faisal4590aziz-bangla-health-related-paraphrased-dataset",
@@ -4381,7 +4569,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "gjyotk-menstrual-health-awareness-dataset",
@@ -4403,7 +4592,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "strova-ai-mental-health-survey-dataset",
@@ -4425,7 +4615,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "abdullahimran-mental-health-classification-dataset",
@@ -4447,7 +4638,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "electricsheepafrica-africa-synth-mental-health-psychosis-dataset-seychelles",
@@ -4469,7 +4661,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "umitmertcakmak-mental-health-chatbot-dataset",
@@ -4491,7 +4684,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "dayomtechnologies-english-nuer-dinka-health-translation-dataset",
@@ -4515,7 +4709,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sabin1234-real-scarp-nepali-health-faq-complile-dataset",
@@ -4537,7 +4732,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "christianqb16-pet-health-symptoms-dataset",
@@ -4559,7 +4755,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "skywhal3-stxbp1-pubmed-central-multimodal-dataset",
@@ -4583,7 +4780,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "owaiskha9654-pubmed-multilabel-text-classification-dataset-mesh",
@@ -4606,7 +4804,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "abdelmo-pubmed-dataset",
@@ -4628,7 +4827,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "leoli04-leo-pubmed-dataset",
@@ -4650,7 +4850,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "cyberpsych-pubmed-cancer-nlp-textual-dataset",
@@ -4673,7 +4874,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "abdelmo-pubmeddataset",
@@ -4695,7 +4897,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "renhaolu-pubmed-sycophancy-dataset",
@@ -4717,7 +4920,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "renhaolu-pubmed-sycophancy-dataset-dpo",
@@ -4739,7 +4943,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "amandabai98-iptacopan-pubmed-dataset",
@@ -4761,7 +4966,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "amandabai98-pelacarsen-pubmed-dataset",
@@ -4783,7 +4989,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "hazem91-my-pubmed-dataset",
@@ -4807,7 +5014,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "french-datasets-rntc-pubmed-fr-clinical-quality-annotations-5",
@@ -4834,7 +5042,8 @@
       "English",
       "French",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "french-datasets-rntc-pubmed-preprocess",
@@ -4857,7 +5066,8 @@
     "language": [
       "English",
       "French"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "french-datasets-rntc-nuner-pubmed-french",
@@ -4881,7 +5091,8 @@
     "language": [
       "English",
       "French"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "french-datasets-rntc-clinical-pubmed-translate",
@@ -4908,7 +5119,8 @@
       "English",
       "French",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "terrantez-raft-dataset-pubmed",
@@ -4930,7 +5142,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "terrantez-raft-dataset-pubmed-2",
@@ -4952,7 +5165,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-mri-radiology-reports-with-findings-dataset",
@@ -4978,7 +5192,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-ct-scan-radiology-reports-with-findings-dataset",
@@ -5002,7 +5217,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "zhangny-radiology-dataset",
@@ -5028,7 +5244,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-mri-radiology-reports-without-findings-dataset",
@@ -5054,7 +5271,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-x-ray-radiology-reports-without-findings-dataset",
@@ -5078,7 +5296,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "roshanrks-new-dataset-radiology",
@@ -5100,7 +5319,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "roshanrks-new-radiology-dataset",
@@ -5122,7 +5342,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "tatvara-radiology-vlm-dataset",
@@ -5144,7 +5365,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-x-ray-radiology-reports-with-findings-dataset",
@@ -5168,7 +5390,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "roshanrks-radiology-dataset",
@@ -5191,7 +5414,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-xray-opg-dental-radiology-reports-without-findings-dataset",
@@ -5214,7 +5438,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "phiphi216-radiology-recognition-dataset",
@@ -5237,7 +5462,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "roshanrks-custom-dataset-radiology",
@@ -5259,7 +5485,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "phiphi216-radiology-detection-dataset",
@@ -5282,7 +5509,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "infobayai-ct-scan-radiology-reports-without-findings-dataset",
@@ -5306,7 +5534,8 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "razz-123-radiology-dataset-9",
@@ -5331,7 +5560,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-capstone-mimic-clinical-notes-gte2-from-mimic-note-preprocessed",
@@ -5353,7 +5583,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-capstone-mimic-clinical-notes-from-og",
@@ -5375,7 +5606,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-capstone-mimic-clinical-notes-v2",
@@ -5398,7 +5630,8 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-capstone-mimic-clinical-notes-gte3-from-mimic-note-preprocessed",
@@ -5420,7 +5653,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mimic-capstone-mimic-clinical-notes-269990",
@@ -5443,7 +5677,8 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "community-datasets-swedish-medical-ner",
@@ -5466,7 +5701,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "shelterw-chinese-medical-ner",
@@ -5489,7 +5725,8 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bigbio-swedish-medical-ner",
@@ -5511,7 +5748,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "dylanmontoya22-biobert-ner-medical-text",
@@ -5534,7 +5772,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mwitiderrick-medicalner",
@@ -5556,7 +5795,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "thejanbw-medical-privacy-ner",
@@ -5580,7 +5820,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "cp500-raw-medical-ner",
@@ -5602,7 +5843,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "xingqiang-medical-ner-instruction-data",
@@ -5626,7 +5868,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "typicaai-medicalner-fr",
@@ -5649,7 +5892,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "theekshana-ner-medical-reports-tokenized-deid-roberta-i2b2",
@@ -5672,7 +5916,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "amareshhebbar-medical-ner-sft",
@@ -5696,7 +5941,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "mfaruqi-indonesian-medical-ner",
@@ -5721,7 +5967,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "gsri-18-medical-ner-bleurt-separated",
@@ -5744,7 +5991,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "xingqiang-medical-ner-instruction-data-v3",
@@ -5766,7 +6014,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "bsc-nlp4bia-swedish-medical-ner",
@@ -5788,7 +6037,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "xingqiang-medical-ner-instruction-data-v2",
@@ -5810,7 +6060,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "junyeong-nero-mmlu-medical-filtered",
@@ -5832,7 +6083,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "cp500-tokenized-medical-ner",
@@ -5854,7 +6106,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner-cas-annotations-combined-v2-new-split",
@@ -5876,7 +6129,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner-fr-e3c-guidelines",
@@ -5898,7 +6152,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "sohaibdevv-medical-prescription-ner-2026",
@@ -5920,7 +6175,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner",
@@ -5942,7 +6198,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "theekshana-ner-medical-reports",
@@ -5964,7 +6221,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "lakshmishreea122003-medical-ner",
@@ -5986,7 +6244,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner-fr",
@@ -6008,7 +6267,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner-cas-annotations-combined",
@@ -6030,7 +6290,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "jasong03-medical-ner-vie",
@@ -6052,7 +6313,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "rozyshindra-medical-ner",
@@ -6074,7 +6336,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "joelmba-medicalner-cas-annotations-combined-v2",
@@ -6096,7 +6359,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "jasong03-medical-ner",
@@ -6118,7 +6382,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
   },
   {
     "id": "parsa-mhmdi-medical-ner",
@@ -6140,6 +6405,39 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "status": "auto"
+  },
+  {
+    "id": "afrimed-qa",
+    "name": "AfriMed-QA",
+    "type": "QA",
+    "size": "~2000 questions",
+    "task": "clinical-reasoning",
+    "access": "open",
+    "status": "checked",
+    "license": "CC BY 4.0",
+    "hf": "Jacaranda-AI/afrimedqa",
+    "specialty": [
+      "general-medicine"
+    ],
+    "description": "Multilingual medical QA dataset covering 32 African languages, sourced from clinical licensing exams.",
+    "usecase": "Evaluate model performance on African clinical questions. Benchmark multilingual health reasoning.",
+    "tags": [
+      "multilingual",
+      "africa",
+      "medical-qa",
+      "clinical"
+    ],
+    "language": [
+      "English",
+      "French",
+      "Swahili",
+      "Hausa",
+      "Amharic",
+      "Zulu",
+      "Yoruba"
+    ],
+    "featured": false
   }
 ]

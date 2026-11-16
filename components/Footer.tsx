@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="wrap foot">
         <p>
           <strong>HealthLLM</strong> — open benchmarks for health AI.
-          All scores are reproducible: temperature 0, seed 42, 100 samples per eval.
+          Scores use temperature 0, seed 42, 100 samples per eval. Results may vary across hardware and Ollama versions.
         </p>
         <p>
           <strong>Not medical advice.</strong> These benchmarks measure language model performance, not clinical safety.

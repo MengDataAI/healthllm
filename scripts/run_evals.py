@@ -6,13 +6,14 @@ Usage:
     ollama pull meditron:7b
 
     python scripts/run_evals.py meditron:7b
-    python scripts/run_evals.py llama3.1:8b --samples 50
-    python scripts/run_evals.py meditron:7b --push   # also uploads to Supabase
+    python scripts/run_evals.py meditron:7b --samples 50
+    python scripts/run_evals.py meditron:7b --repeats 3   # run 3 times, report mean ± stdev + 95% CI
+    python scripts/run_evals.py meditron:7b --push        # upload to Supabase leaderboard
 
 Results are saved to data/results/<model-id>.json
 """
 
-import argparse, json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
+import argparse, json, math, os, re, sys, time, urllib.request, urllib.error, urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -43,6 +44,53 @@ def ask(model: str, prompt: str, timeout: int = 600) -> str:
             return json.loads(resp.read())["response"].strip()
     except urllib.error.URLError as e:
         sys.exit(f"Ollama not reachable at {OLLAMA_URL}: {e}\nIs Ollama running? Run: ollama serve")
+
+
+def wilson_ci(correct: int, n: int, z: float = 1.96):
+    """Wilson score 95% confidence interval for a proportion."""
+    if n == 0:
+        return 0.0, 0.0
+    p = correct / n
+    denom = 1 + z * z / n
+    centre = (p + z * z / (2 * n)) / denom
+    margin = (z / denom) * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
+    return round((centre - margin) * 100, 1), round((centre + margin) * 100, 1)
+
+
+def stdev(values: list) -> float:
+    if len(values) < 2:
+        return 0.0
+    mean = sum(values) / len(values)
+    return round(math.sqrt(sum((x - mean) ** 2 for x in values) / (len(values) - 1)), 1)
+
+
+def get_ollama_model_info(model: str) -> dict:
+    try:
+        payload = json.dumps({"name": model}).encode()
+        req = urllib.request.Request(
+            f"{OLLAMA_URL}/api/show",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        details = data.get("details", {})
+        return {
+            "ollama_model_digest": data.get("model_info", {}).get("general.basename", ""),
+            "quantization": details.get("quantization_level", ""),
+            "parameter_size": details.get("parameter_size", ""),
+            "format": details.get("format", ""),
+        }
+    except Exception:
+        return {}
+
+
+def get_ollama_version() -> str:
+    try:
+        with urllib.request.urlopen(f"{OLLAMA_URL}/api/version", timeout=5) as resp:
+            return json.loads(resp.read()).get("version", "")
+    except Exception:
+        return ""
 
 
 def check_ollama(model: str):
@@ -334,6 +382,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("model", help="Ollama model tag, e.g. meditron:7b or llama3.1:8b")
     ap.add_argument("--samples", type=int, default=100, help="Samples per eval (default 100)")
+    ap.add_argument("--repeats", type=int, default=1, help="Run each eval N times and report mean ± stdev + 95%% CI")
     ap.add_argument("--push", action="store_true", help="Upload results to Supabase")
     ap.add_argument("--submitted-by", default="", help="Your name/handle for the leaderboard")
     ap.add_argument("--hardware", default="", help="e.g. 'MacBook Pro M3 32GB'")
@@ -341,45 +390,82 @@ def main():
 
     model = args.model
     n = args.samples
+    repeats = max(1, args.repeats)
 
     print(f"\nHealthLLM Eval Runner")
     print(f"Model   : {model}")
-    print(f"Samples : {n} per eval")
+    print(f"Samples : {n} per eval  Repeats: {repeats}")
     print(f"Temp    : {TEMPERATURE}  Seed: {SEED}\n")
 
     check_ollama(model)
 
+    ollama_version = get_ollama_version()
+    model_info = get_ollama_model_info(model)
+    if ollama_version:
+        print(f"Ollama  : {ollama_version}  Quant: {model_info.get('quantization','?')}\n")
+
     # Derive model_id from Ollama tag: "meditron:7b" → "meditron-7b"
     model_id = model.replace(":", "-").replace("/", "-")
+
+    # Store per-repeat scores for CI/stdev
+    all_runs: dict[str, list] = {
+        "med_knowledge": [], "clinical_reasoning": [], "evidence_reasoning": [],
+        "claim_verification": [], "entity_extraction": [], "json_reliability": [],
+        "consistency": [],
+    }
 
     scores = {}
     t0 = time.time()
 
-    print("1/7  Medical knowledge (MedMCQA)...")
-    scores["med_knowledge"] = eval_med_knowledge(model, n)
-    print(f"\n     Score: {scores['med_knowledge']}%")
+    for repeat in range(repeats):
+        if repeats > 1:
+            print(f"\n── Repeat {repeat + 1}/{repeats} ──")
 
-    print("2/7  Clinical reasoning (MedQA USMLE)...")
-    scores["clinical_reasoning"] = eval_clinical_reasoning(model, n)
-    print(f"\n     Score: {scores['clinical_reasoning']}%")
+        print("1/7  Medical knowledge (MedMCQA)...")
+        s = eval_med_knowledge(model, n)
+        all_runs["med_knowledge"].append(s)
+        print(f"\n     Score: {s}%")
 
-    print("3/7  Evidence reasoning (PubMedQA)...")
-    scores["evidence_reasoning"] = eval_evidence_reasoning(model, n)
-    print(f"\n     Score: {scores['evidence_reasoning']}%")
+        print("2/7  Clinical reasoning (MedQA USMLE)...")
+        s = eval_clinical_reasoning(model, n)
+        all_runs["clinical_reasoning"].append(s)
+        print(f"\n     Score: {s}%")
 
-    print("4/7  Claim verification (PubHealth)...")
-    scores["claim_verification"] = eval_claim_verification(model, n)
-    print(f"\n     Score: {scores['claim_verification']}%")
+        print("3/7  Evidence reasoning (PubMedQA)...")
+        s = eval_evidence_reasoning(model, n)
+        all_runs["evidence_reasoning"].append(s)
+        print(f"\n     Score: {s}%")
 
-    print("5/7  Entity extraction + JSON reliability (NCBI Disease)...")
-    scores["entity_extraction"], scores["json_reliability"] = eval_entity_extraction(model, n)
-    print(f"\n     F1: {scores['entity_extraction']}%  JSON valid: {scores['json_reliability']}%")
+        print("4/7  Claim verification (PubHealth)...")
+        s = eval_claim_verification(model, n)
+        all_runs["claim_verification"].append(s)
+        print(f"\n     Score: {s}%")
 
-    print("6/7  (json_reliability computed above)")
+        print("5/7  Entity extraction + JSON reliability (NCBI Disease)...")
+        f1, json_pct = eval_entity_extraction(model, n)
+        all_runs["entity_extraction"].append(f1)
+        all_runs["json_reliability"].append(json_pct)
+        print(f"\n     F1: {f1}%  JSON valid: {json_pct}%")
 
-    print("7/7  Consistency (MedMCQA shuffled)...")
-    scores["consistency"] = eval_consistency(model, n)
-    print(f"\n     Score: {scores['consistency']}%")
+        print("6/7  (json_reliability computed above)")
+
+        print("7/7  Consistency (MedMCQA shuffled)...")
+        s = eval_consistency(model, n)
+        all_runs["consistency"].append(s)
+        print(f"\n     Score: {s}%")
+
+    # Aggregate across repeats
+    for k, vals in all_runs.items():
+        scores[k] = round(sum(vals) / len(vals), 1)
+
+    # Compute Wilson CI on the final mean (treating mean% as proportion)
+    ci: dict[str, tuple] = {}
+    for k, vals in all_runs.items():
+        mean_pct = sum(vals) / len(vals)
+        correct_equiv = round(mean_pct / 100 * n)
+        ci[k] = wilson_ci(correct_equiv, n)
+
+    run_stdev: dict[str, float] = {k: stdev(v) for k, v in all_runs.items()}
 
     health_score = round(sum(scores.values()) / len(scores), 1)
     elapsed = round(time.time() - t0)
@@ -390,10 +476,16 @@ def main():
         "hardware": args.hardware,
         "submitted_by": args.submitted_by,
         "samples": n,
+        "repeats": repeats,
         "seed": SEED,
         "temperature": TEMPERATURE,
+        "ollama_version": ollama_version,
+        "quantization": model_info.get("quantization", ""),
+        "parameter_size": model_info.get("parameter_size", ""),
         "elapsed_seconds": elapsed,
         "scores": scores,
+        "confidence_intervals": {k: {"lo": v[0], "hi": v[1]} for k, v in ci.items()},
+        "run_stdev": run_stdev if repeats > 1 else {},
         "health_score": health_score,
     }
 
@@ -401,17 +493,23 @@ def main():
     out = RESULTS_DIR / f"{model_id}.json"
     out.write_text(json.dumps(result, indent=2))
 
-    print(f"\n{'─'*48}")
-    print(f"  Medical knowledge    {scores['med_knowledge']:>6}%")
-    print(f"  Clinical reasoning   {scores['clinical_reasoning']:>6}%")
-    print(f"  Evidence reasoning   {scores['evidence_reasoning']:>6}%")
-    print(f"  Claim verification   {scores['claim_verification']:>6}%")
-    print(f"  Entity extraction    {scores['entity_extraction']:>6}%  (F1)")
-    print(f"  JSON reliability     {scores['json_reliability']:>6}%")
-    print(f"  Consistency          {scores['consistency']:>6}%")
-    print(f"{'─'*48}")
+    def _ci(k):
+        lo, hi = ci[k]
+        return f"  [{lo}–{hi}]"
+
+    print(f"\n{'─'*56}")
+    print(f"  Medical knowledge    {scores['med_knowledge']:>6}%  95% CI {_ci('med_knowledge')}")
+    print(f"  Clinical reasoning   {scores['clinical_reasoning']:>6}%  95% CI {_ci('clinical_reasoning')}")
+    print(f"  Evidence reasoning   {scores['evidence_reasoning']:>6}%  95% CI {_ci('evidence_reasoning')}")
+    print(f"  Claim verification   {scores['claim_verification']:>6}%  95% CI {_ci('claim_verification')}")
+    print(f"  Entity extraction    {scores['entity_extraction']:>6}%  95% CI {_ci('entity_extraction')}  (F1)")
+    print(f"  JSON reliability     {scores['json_reliability']:>6}%  95% CI {_ci('json_reliability')}")
+    print(f"  Consistency          {scores['consistency']:>6}%  95% CI {_ci('consistency')}")
+    print(f"{'─'*56}")
     print(f"  Health Score         {health_score:>6}%")
-    print(f"{'─'*48}")
+    if repeats > 1:
+        print(f"  Run-to-run stdev     {stdev(list(scores.values())):>6}%  (across {repeats} repeats)")
+    print(f"{'─'*56}")
     print(f"\nSaved: {out}")
     print(f"Time : {elapsed//60}m {elapsed%60}s\n")
 

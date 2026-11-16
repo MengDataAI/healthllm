@@ -151,8 +151,9 @@ export default function ContributePage() {
           <h2>How we evaluate every model</h2>
         </div>
         <p className="intro" style={{ marginBottom: 48 }}>
-          Six steps, fully open, fully reproducible. Any model that runs in Ollama can be evaluated
-          using the same pipeline — same datasets, same temperature, same seed.
+          Six steps, open methodology. Any model that runs in Ollama can be evaluated
+          using the same pipeline — same datasets, same temperature, same seed. Results may vary
+          across hardware and Ollama versions; use <code>--repeats</code> to measure variance.
         </p>
         <div className="eval-timeline">
           {TIMELINE.map((s) => (

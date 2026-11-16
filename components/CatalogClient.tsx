@@ -142,6 +142,7 @@ export default function CatalogClient(props: Props) {
               <option value="all">All</option>
               <option value="open">Open</option>
               <option value="credentialed">Credentialed</option>
+              <option value="gated">Gated</option>
             </select>
           </div>
         )}

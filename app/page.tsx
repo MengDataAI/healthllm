@@ -74,7 +74,7 @@ export default async function HomePage() {
           <div className="sec-head"><h2 id="why-h">Why this exists</h2></div>
           <div className="why-grid">
             {[
-              { icon: "🏥", title: "Health AI needs transparency", body: "Models are being deployed in clinical tools, triage systems, and patient-facing apps. Without open, reproducible benchmarks it is impossible to know which models are actually safe to use with health data." },
+              { icon: "🏥", title: "Health AI needs transparency", body: "Models are being deployed in clinical tools, triage systems, and patient-facing apps. Without open benchmarks it is impossible to compare models or understand their failure modes on health data." },
               { icon: "🔬", title: "General benchmarks miss the point", body: "A model that scores well on MMLU can still fail at clinical reasoning, misidentify diseases, or hallucinate drug interactions. We test specifically for healthcare: facts, reasoning, evidence, and structured output." },
               { icon: "📂", title: "Open data, open scores", body: "Every eval uses a publicly licensed dataset. Every score comes from a results file checked into this repo. No proprietary data, no closed judging — just runs anyone can reproduce and verify." },
               { icon: "🤖", title: "RAG changes the picture", body: "Most health deployments use retrieval-augmented generation (RAG) to ground answers in clinical documents. We test JSON reliability and claim verification — the two capabilities that break first in real RAG pipelines." },
