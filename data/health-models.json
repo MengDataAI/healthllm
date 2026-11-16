@@ -26,7 +26,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "meditron-70b",
@@ -55,7 +57,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "med42-70b",
@@ -83,7 +87,9 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "medgemma-27b",
@@ -113,7 +119,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "medgemma-4b",
@@ -143,7 +151,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "biomistral-7b",
@@ -172,7 +182,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "meditron-7b",
@@ -200,7 +212,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "openbiollm-8b",
@@ -229,7 +243,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "asclepius-7b",
@@ -257,7 +273,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "huatuogpt2-7b",
@@ -286,7 +304,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "chatdoctor-7b",
@@ -312,7 +332,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "medalpaca-13b",
@@ -339,7 +361,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pmc-llama-13b",
@@ -368,7 +392,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "clinicalcamel-30b",
@@ -395,7 +421,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "biogpt",
@@ -423,7 +451,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "biobert-large",
@@ -452,7 +482,9 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "clinical-bert",
@@ -482,7 +514,9 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "pubmedbert",
@@ -511,7 +545,9 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "biolinkbert",
@@ -540,7 +576,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sapbert",
@@ -569,7 +607,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "gatortron",
@@ -596,7 +636,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bluebert",
@@ -625,7 +667,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "clinical-longformer",
@@ -654,7 +698,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "scibert",
@@ -683,7 +729,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llava-med",
@@ -710,7 +758,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llama3.1-8b",
@@ -738,7 +788,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mistral-7b",
@@ -767,7 +819,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "gemma2-9b",
@@ -795,7 +849,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "qwen2.5-7b",
@@ -826,7 +882,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "phi3.5-mini",
@@ -856,7 +914,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "zephyr-7b",
@@ -884,7 +944,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "qwen2.5-72b",
@@ -915,7 +977,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "bio-medical-llama3-8b",
@@ -945,7 +1009,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "medical-qwen3-swallow-8b",
@@ -975,7 +1041,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mental-health-falcon-7b",
@@ -1004,7 +1072,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": true
   },
   {
     "id": "mental-health-llama2-13b",
@@ -1033,7 +1103,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "healix-3b",
@@ -1061,7 +1133,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "umlsbert",
@@ -1090,7 +1164,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "chexbert",
@@ -1119,7 +1195,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "medcpt-query",
@@ -1148,7 +1226,9 @@
     "featured": true,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bioelectra-large",
@@ -1176,7 +1256,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "cxr-bert",
@@ -1205,7 +1287,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "clinical-t5-large",
@@ -1234,7 +1318,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llama3-aloe-8b",
@@ -1264,7 +1350,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mixtral-8x7b-medical",
@@ -1295,7 +1383,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-medicaledi-llm-reasoning-final-gguf",
@@ -1319,7 +1409,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-medical-llm-spidercore-14b-i1-gguf",
@@ -1343,7 +1435,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "tokyotech-llm-medical-qwen3-swallow-30b-a3b",
@@ -1370,7 +1464,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-gccl-medical-llm-qwen3.5-4b-gguf",
@@ -1396,7 +1492,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "shaleen123-medicaledi-llm-reasoning-final",
@@ -1421,7 +1519,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "oscardeng-taylor-medical-llm-4bit",
@@ -1446,7 +1546,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "oscardeng-taylor-medical-llm-4bit-beta",
@@ -1471,7 +1573,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-gccl-medical-llm-qwen3-4b-gguf",
@@ -1497,7 +1601,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-medical-llm-spidercore-8b-i1-gguf",
@@ -1521,7 +1627,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-medical-llm-spidercore-14b-gguf",
@@ -1545,7 +1653,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "tokyotech-llm-medical-gpt-oss-swallow-120b",
@@ -1570,7 +1680,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "tokyotech-llm-medical-qwen3-swallow-32b",
@@ -1597,7 +1709,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-medical-llm-spidercore-8b-gguf",
@@ -1621,7 +1735,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "surajvbangera-llm-medicalbot",
@@ -1648,7 +1764,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "kavyaah-medical-coding-llm",
@@ -1672,7 +1790,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3.5-4b",
@@ -1699,7 +1819,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "yuvabe-ai-llama-medical-llm-16bit",
@@ -1725,7 +1847,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "alinadhir-sina-medical-reasoning-llm",
@@ -1749,7 +1873,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "yuvabe-ai-llama-medical-llm-8bit",
@@ -1775,7 +1901,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-gccl-medical-llm-8b-gguf",
@@ -1799,7 +1927,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft-i1-gguf",
@@ -1825,7 +1955,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "edwinkim-medical-llm-spidercore-14b",
@@ -1850,7 +1982,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft-gguf",
@@ -1876,7 +2010,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "monisha27-medical-llm-sft-demo",
@@ -1900,7 +2036,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3-4b-q4-k-m-gguf",
@@ -1927,7 +2065,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-instruct-exp8-instruction-dft",
@@ -1954,7 +2094,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-thinking-exp8-instruction-dft",
@@ -1981,7 +2123,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3.5-4b.q4-k-m-gguf",
@@ -2007,7 +2151,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "oussamael-medical-llm-10m-base",
@@ -2032,7 +2178,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "weblab-llm-m-medicalpj-qwen3-235b-a22b-instruct-exp10-base-instruction-dft",
@@ -2059,7 +2207,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "bkholyday-qwen2.5-32b-instruct-medical-llm-elastic-search-250227",
@@ -2085,7 +2235,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "al-dn-medical-llm-mistral7b-q8-0-gguf",
@@ -2113,7 +2265,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "shaleen123-medicalllm",
@@ -2137,7 +2291,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "edwinkim-medical-llm-spidercore-8b",
@@ -2162,7 +2318,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "al-dn-medical-llm-mistral7b-f16-gguf",
@@ -2190,7 +2348,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "eswardivi-medical-qa-llm",
@@ -2214,7 +2374,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "faysal492-medical-llm",
@@ -2239,7 +2401,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "z8086486-gccl-medical-llm-qwen3-4b",
@@ -2266,7 +2430,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "sagnik-p-medical-llm",
@@ -2293,7 +2459,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "vishnudhat-mus-medical-llm-lora",
@@ -2319,7 +2487,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hungsvdut2k2-medical-sea-llm-full-finetune",
@@ -2346,7 +2516,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bkholyday-qwen2.5-0.5b-instruct-medicalllm-huatuogpt-o1-sft",
@@ -2372,7 +2544,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "dkumarcvp-medical-llm-1gb",
@@ -2397,7 +2571,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "dod-llms-gptneo-1.3b-medical-multitranspt",
@@ -2421,7 +2597,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "khoa-llma2-vi-medical-news",
@@ -2446,7 +2624,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "monisha27-medical-llm-sft",
@@ -2471,7 +2651,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "dod-llms-gptneo-125m-medical-multitranspt",
@@ -2495,7 +2677,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "anjaligiriraj-medical-llm-tinyllama",
@@ -2521,7 +2705,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "amalltas-medical-llm-merged",
@@ -2548,7 +2734,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "shayan467-clinical-notes-llm",
@@ -2574,7 +2762,9 @@
       "English",
       "Multilingual",
       "Spanish"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "leahjael-clinical-trials-llm",
@@ -2598,7 +2788,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-domain-specific-llm-clinical-data",
@@ -2622,7 +2814,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-1-fine-tuned-llm-clinical-data",
@@ -2646,7 +2840,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-2-fine-tuned-llm-clinical-data",
@@ -2670,7 +2866,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-sample-fine-tuned-llm-clinical-data",
@@ -2694,7 +2892,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-fbopt-fine-tuned-llm-clinical-data",
@@ -2718,7 +2918,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-opt-2-fine-tuned-llm-clinical-data",
@@ -2742,7 +2944,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "manoranjan30-repeatedly-fine-tuned-llm-clinical-data",
@@ -2766,7 +2970,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sujeongim-clinical-llm-trained",
@@ -2790,7 +2996,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sujeongim-clinical-llm-trained-2025",
@@ -2814,7 +3022,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "msginside-clinical-llm-trained",
@@ -2838,7 +3048,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sathwikkuchana007-llm-chat-clinical-llama-3.1-8b",
@@ -2865,7 +3077,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "aakthepaak-clinical-llm-r32",
@@ -2892,7 +3106,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v1-gguf",
@@ -2916,7 +3132,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v0-i1-gguf",
@@ -2940,7 +3158,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v1-i1-gguf",
@@ -2964,7 +3184,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-dpo-gguf",
@@ -2990,7 +3212,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "richarderkhov-nahidhasan-health-llm-gguf",
@@ -3014,7 +3238,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "veenasree-mental-health-bert-llm",
@@ -3039,7 +3265,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "uruz7-mental-healthcare-llm",
@@ -3063,7 +3291,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-dpo-gguf",
@@ -3089,7 +3319,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "mradermacher-finetuned-dialogpt-mental-health-llm-v0-gguf",
@@ -3113,7 +3345,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ryanzzzzz-mental-health-llm-baseline-sft-llama-3.1-8b-lora-yt-0223",
@@ -3139,7 +3373,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v3-high-accuracy",
@@ -3165,7 +3401,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "ad-llm-technion-qwen-healthy-random-noise",
@@ -3191,7 +3429,9 @@
       "Chinese",
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "davis426-healthcare-llm-assistant",
@@ -3219,7 +3459,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "anhduy0911-llm-ie-healthcare",
@@ -3245,7 +3487,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-merged-16bit",
@@ -3271,7 +3515,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v7",
@@ -3295,7 +3541,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v1",
@@ -3319,7 +3567,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "anindita-13-healthmate-llm",
@@ -3344,7 +3594,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ryanzzzzz-mental-health-llm-baseline-sft-llama-3.1-8b-lora-qa-yt-0223",
@@ -3370,7 +3622,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "iamsan06-qlora-mental-health-llm",
@@ -3396,7 +3650,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llm-healthcare-bert-v6-large",
@@ -3421,7 +3677,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v4",
@@ -3445,7 +3703,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v8",
@@ -3469,7 +3729,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v0",
@@ -3493,7 +3755,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm",
@@ -3517,7 +3781,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v3",
@@ -3541,7 +3807,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llmithull-healthgpt-lora",
@@ -3569,7 +3837,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "maruisaa-eeg-healthllm",
@@ -3593,7 +3863,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "lokesh477-healthcare-llm",
@@ -3619,7 +3891,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nahidhasan-health-llm",
@@ -3645,7 +3919,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-merged-4bit",
@@ -3671,7 +3947,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v5",
@@ -3695,7 +3973,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v9",
@@ -3719,7 +3999,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llmaaz-llama-mental-health-merged",
@@ -3744,7 +4026,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "ad-llm-technion-llama-healthy-random-noise",
@@ -3769,7 +4053,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "ad-llm-technion-gemma-healthy-random-noise",
@@ -3794,7 +4080,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-merged-4bit",
@@ -3820,7 +4108,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct-merged-16bit",
@@ -3846,7 +4136,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v6",
@@ -3870,7 +4162,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "llmaaz-llama-mental-health",
@@ -3895,7 +4189,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "kingducks-llm-health",
@@ -3919,7 +4215,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bluelotus99-healthllm",
@@ -3943,7 +4241,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "truongxl-llm-healthcare",
@@ -3969,7 +4269,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v1",
@@ -3994,7 +4296,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "nihaal-mansoor-llama3-mental-health-llm-finetuned-v2",
@@ -4019,7 +4323,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "emama-nahid-health-llm",
@@ -4044,7 +4350,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct",
@@ -4070,7 +4378,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-3b-instruct",
@@ -4096,7 +4406,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "sai1908-finetuned-dialogpt-mental-health-llm-v2",
@@ -4120,7 +4432,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "johnjehiel-personal-health-llm-llama-3.2-1b-instruct-dpo",
@@ -4146,7 +4460,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "iiosnail-bert-base-chinese-medical-ner",
@@ -4173,7 +4489,9 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "silpakanneganti-bert-medical-ner",
@@ -4199,7 +4517,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "callmedaniel-tw-medical-bert",
@@ -4225,7 +4545,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "setosm-bert-finetuned-for-medical-ner",
@@ -4251,7 +4573,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "aventiq-ai-bert-medical-entity-extraction",
@@ -4276,7 +4600,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "yousef1258852-arabic-medical-qa-bert",
@@ -4303,7 +4629,9 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ilyali034-bert-medical-diagnosis-en",
@@ -4330,7 +4658,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "fspanda-medical-bio-bert2",
@@ -4355,7 +4685,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "vindoe-bert-finetuned-for-medical-ner",
@@ -4381,7 +4713,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "helboukkouri-character-bert-medical",
@@ -4406,7 +4740,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "medical-ner-proj-bert-medical-ner-proj",
@@ -4432,7 +4768,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "snumin44-medical-biencoder-ko-bert-context",
@@ -4457,7 +4795,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "sejalsaka-medical-bert-finetuned-ner",
@@ -4483,7 +4823,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "apps1-medical-bert-tiny-asymmetric-old-dataset-v2",
@@ -4509,7 +4851,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "snumin44-medical-biencoder-ko-bert-question",
@@ -4534,7 +4878,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "fmmolina-bert-base-spanish-wwm-uncased-finetuned-ner-medical",
@@ -4561,7 +4907,9 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ai-ml-research-medical-bert-tiny-asymmetric-old-dataset-v3",
@@ -4587,7 +4935,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pavanmantha-bert-medical-student",
@@ -4613,7 +4963,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "incidelen-bert-base-turkish-cased-medical-qa",
@@ -4638,7 +4990,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "justadvancetechonology-bert-fine-tuned-medical-insurance-ner",
@@ -4664,7 +5018,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "incidelen-bert-base-turkish-128k-cased-medical-qa",
@@ -4689,7 +5045,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pavanmantha-bert-medical-teacher",
@@ -4715,7 +5073,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "cihatyldz-sifahane-bert-turkish-medical",
@@ -4742,7 +5102,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "raj-p-bert-finetuned-ner-medical",
@@ -4768,7 +5130,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "alexvladu1-bert-romanian-medical-issue",
@@ -4793,7 +5157,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "apps1-medical-bert-tiny-asymmetric-old-dataset-v1",
@@ -4819,7 +5185,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ficofilbert-finetuned-medical-bert",
@@ -4844,7 +5212,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "jingtao-dam-bert-base-mlm-dureader-cpr-medical",
@@ -4869,7 +5239,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pineiden-nominal-groups-recognition-medical-disease-competencia2-bert-medical-ner",
@@ -4895,7 +5267,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "gleb-shnshn-arabic-medical-bert-qa-82",
@@ -4922,7 +5296,9 @@
     "language": [
       "Arabic",
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ajs50-bert-finetuned-medicalchunksecond",
@@ -4948,7 +5324,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "roupenminassian-medicalbert",
@@ -4975,7 +5353,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "achdev-medicalbert",
@@ -5001,7 +5381,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "caesarcitrea-crocus-bert-medical-department-classification",
@@ -5027,7 +5409,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "albigara-bert-finetuned-ner-medical-copy",
@@ -5053,7 +5437,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ivanperkhun-did-the-doctor-say-anything-about-the-medical-report-in-general-bert-last512",
@@ -5079,7 +5465,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ubersmoothie-bert-finetuned-ner-medical",
@@ -5105,7 +5493,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "agevasbatgry-bert-finetuned-ner-medical",
@@ -5131,7 +5521,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "wwlysses-bert-finetuned-ner-medical",
@@ -5157,7 +5549,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "lakshmishreea122003-bert-medical-ner",
@@ -5183,7 +5577,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "diginoron-bert-medical-fa",
@@ -5208,7 +5604,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "atharshk-bert-medical",
@@ -5234,7 +5632,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "toolevalxm-medicalbert-clinicalrelease",
@@ -5260,7 +5660,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "supershaowei-bert-intent-medical-classification",
@@ -5286,7 +5688,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "majiaqi1213-bert-base-chinese-medical-ner",
@@ -5312,7 +5716,9 @@
     "language": [
       "Chinese",
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ajs50-bert-finetuned-medicalchunk",
@@ -5338,7 +5744,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "etadevosyan-did-the-doctor-say-that-the-medical-report-would-be-in-a-specific-time-bert-last128",
@@ -5364,7 +5772,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ivanperkhun-did-the-doctor-say-that-the-medical-report-would-be-in-a-specific-time-bert-last128",
@@ -5390,7 +5800,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ivanperkhun-did-the-doctor-discuss-with-the-patient-where-the-medical-report-would-be-bert-last512",
@@ -5416,7 +5828,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "moosejuice13-bert-medical-diagnosis-classifier",
@@ -5441,7 +5855,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "medicalai-clinicalbert",
@@ -5467,7 +5883,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "samrawal-bert-base-uncased-clinical-ner",
@@ -5493,7 +5911,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bvanaken-clinical-assertion-negation-bert",
@@ -5520,7 +5940,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nlpie-tiny-clinicalbert",
@@ -5545,7 +5967,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "valiancehealth-bio-clinical-bert-onnx",
@@ -5570,7 +5994,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nlpie-distil-clinicalbert",
@@ -5595,7 +6021,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "xenova-bio-clinicalbert",
@@ -5620,7 +6048,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "tsubasaz-clinical-pubmed-bert-base-512",
@@ -5646,7 +6076,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "okho0653-bio-clinicalbert-zero-shot-tokenizer-truncation-sentiment-model",
@@ -5672,7 +6104,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "sasrplays-finetuned-clinicalbert-disease-classifier",
@@ -5697,7 +6131,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "pabromero-clinicalbert-full-finetuned-ner-pablo",
@@ -5724,7 +6160,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "jon-t-tiny-clinicalbert-qa",
@@ -5750,7 +6188,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "arashpcc-bio-clinicalbert",
@@ -5775,7 +6215,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "embanemb-bio-clinicalbert-metric-for-best-model-loss-finetuned-metric-for-best-model-loss-finetuned",
@@ -5801,7 +6243,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "raavig-clinical-bert-multi-label-sentence-classification-with-non-spot",
@@ -5826,7 +6270,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "oumaimabrh023-clinicalbert-model",
@@ -5851,7 +6297,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "yagmurtuncer-bert-base-turkish-clinical-ner",
@@ -5877,7 +6325,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "emran-clinicalbert-description-full-icd10-code",
@@ -5902,7 +6352,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "tsubasaz-clinical-pubmed-bert-base-128",
@@ -5928,7 +6380,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "judithrosell-bc5cdr-clinicalbert-ner",
@@ -5955,7 +6409,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "fawern-clinicalbert-medical-text-classification",
@@ -5982,7 +6438,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "lediona-bio-clinicalbert-finetuned-ner",
@@ -6008,7 +6466,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "ajtamayoh-nlp-cic-wfu-clinical-cases-ner-sents-tokenized-bertin-roberta-base-spanish-fine-tuned",
@@ -6035,7 +6495,9 @@
     "language": [
       "English",
       "Spanish"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "menadsa-s-bio-clinicalbert",
@@ -6060,7 +6522,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "akhil001-bio-clinical-bert",
@@ -6085,7 +6549,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv2",
@@ -6111,7 +6577,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "sid321axn-bio-clinicalbert-finetuned-medicalcondition",
@@ -6138,7 +6606,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv2.5",
@@ -6164,7 +6634,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "cnt-upenn-bio-clinicalbert-for-seizurefreedom-classification",
@@ -6190,7 +6662,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "josephnguyen-clinicalbert",
@@ -6216,7 +6690,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "josephnguyen-new-clinicalbert",
@@ -6241,7 +6717,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv2.4",
@@ -6267,7 +6745,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "jon-t-bio-clinicalbert-qa",
@@ -6293,7 +6773,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "alexd063-bio-clinicalbert-finetuned-medmentions-v1",
@@ -6319,7 +6801,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "xenova-clinicalbert",
@@ -6345,7 +6829,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv2.6",
@@ -6371,7 +6857,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv2.7",
@@ -6397,7 +6885,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "mutazyoune-clinicalbert-finetuned-ner",
@@ -6423,7 +6913,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv3",
@@ -6449,7 +6941,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "cja5553-bio-clinicalbert-mimic-iv-icu-stay-more-than-1-day-prediction-ia3-ti",
@@ -6474,7 +6968,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nazyrova-clinicalbert",
@@ -6499,7 +6995,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv5ray",
@@ -6525,7 +7023,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "monstergems-bio-clinicalbert",
@@ -6551,7 +7051,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "alexd063-bio-clinicalbert-finetuned-medqa",
@@ -6576,7 +7078,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "gritli-clinical-bert-right",
@@ -6602,7 +7106,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "nishhaaann-clinicalbertftv1",
@@ -6628,7 +7134,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "tsubasaz-clinical-bert-base-128",
@@ -6653,7 +7161,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "commanderstrife-ade-bio-clinicalbert-ner",
@@ -6679,7 +7189,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "safetensors",
+    "remote_code": false
   },
   {
     "id": "manueltonneau-clinicalcovid-bert-nli",
@@ -6704,7 +7216,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "neuml-pubmedbert-base-embeddings",
@@ -6729,7 +7243,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "timkond-s-pubmedbert-medquad",
@@ -6754,7 +7270,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-335m",
@@ -6782,7 +7300,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-genomicdetect-pubmed-109m",
@@ -6810,7 +7330,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-genomicdetect-pubmed-335m",
@@ -6838,7 +7360,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "microsoft-biomedclip-pubmedbert-256-vit-base-patch16-224",
@@ -6865,7 +7389,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-v2-109m",
@@ -6892,7 +7418,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-109m",
@@ -6920,7 +7448,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-oncologydetect-pubmed-335m",
@@ -6947,7 +7477,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pritamdeka-s-pubmedbert-ms-marco",
@@ -6972,7 +7504,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-109m",
@@ -6999,7 +7533,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-v2-109m",
@@ -7026,7 +7562,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-335m",
@@ -7053,7 +7591,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-335m",
@@ -7080,7 +7620,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-335m",
@@ -7107,7 +7649,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-109m",
@@ -7135,7 +7679,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-speciesdetect-pubmed-109m",
@@ -7162,7 +7708,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-335m",
@@ -7190,7 +7738,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-oncologydetect-pubmed-v2-109m",
@@ -7217,7 +7767,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-109m",
@@ -7245,7 +7797,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-335m",
@@ -7273,7 +7827,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-v2-109m",
@@ -7301,7 +7857,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-109m",
@@ -7328,7 +7886,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-pharmadetect-pubmed-335m",
@@ -7356,7 +7916,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-diseasedetect-pubmed-109m",
@@ -7383,7 +7945,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-v2-109m",
@@ -7410,7 +7974,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-335m",
@@ -7437,7 +8003,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-pathologydetect-pubmed-335m",
@@ -7464,7 +8032,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-anatomydetect-pubmed-109m",
@@ -7491,7 +8061,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-pharmadetect-pubmed-109m",
@@ -7519,7 +8091,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-335m",
@@ -7547,7 +8121,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-109m",
@@ -7574,7 +8150,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-proteindetect-pubmed-v2-109m",
@@ -7601,7 +8179,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-dnadetect-pubmed-v2-109m",
@@ -7629,7 +8209,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-speciesdetect-pubmed-v2-109m",
@@ -7656,7 +8238,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-organismdetect-pubmed-v2-109m",
@@ -7683,7 +8267,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-chemicaldetect-pubmed-v2-109m",
@@ -7711,7 +8297,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-bloodcancerdetect-pubmed-109m",
@@ -7739,7 +8327,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "openmed-openmed-ner-genomedetect-pubmed-v2-109m",
@@ -7767,7 +8357,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "flaviagiammarino-pubmed-clip-vit-base-patch32",
@@ -7793,7 +8385,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "pritamdeka-pubmedbert-mnli-mednli",
@@ -7819,7 +8413,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "cambridgeltl-sapbert-from-pubmedbert-fulltext-mean-token",
@@ -7844,7 +8440,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "ghadeermobasher-bc5cdr-chemical-disease-balanced-biomednlp-pubmedbert-base-uncased-abstract-fulltext",
@@ -7870,7 +8468,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bcwarner-pubmedbert-base-uncased-sts-combined",
@@ -7896,7 +8496,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bionlp-bluebert-pubmed-uncased-l-12-h-768-a-12",
@@ -7921,7 +8523,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "google-bigbird-pegasus-large-pubmed",
@@ -7947,7 +8551,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "microsoft-biomednlp-krissbert-pubmed-umls-el",
@@ -7972,7 +8578,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "neuml-pubmedbert-base-embeddings-matryoshka",
@@ -7997,7 +8605,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-imagingcancer-0.8",
@@ -8022,7 +8632,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "toolevalxm-radiologyai-chestxray",
@@ -8047,7 +8659,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -8073,7 +8687,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-imagingcancer-0.9",
@@ -8099,7 +8715,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-imagingcancer-0.9",
@@ -8124,7 +8742,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-0.8",
@@ -8150,7 +8770,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-0.8",
@@ -8175,7 +8797,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-cardiothoracic-0.9",
@@ -8201,7 +8825,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-imagingcancer-0.9",
@@ -8226,7 +8852,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-pegasus-pubmed-radiology-ai-imagingcancer-0.8",
@@ -8252,7 +8880,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -8277,7 +8907,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-imagingcancer-0.8",
@@ -8302,7 +8934,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "aishwaryas61622-radiology-flan-t5-summary",
@@ -8326,7 +8960,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-cardiothoracic-0.9",
@@ -8351,7 +8987,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-0.9",
@@ -8376,7 +9014,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-t5-large-radiology-ai-cardiothoracic-0.8",
@@ -8401,7 +9041,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "hisaoka-bart-large-cnn-radiology-ai-imagingcancer-0.8",
@@ -8426,7 +9068,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-2",
@@ -8453,7 +9097,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-3",
@@ -8480,7 +9126,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "toolevalxm-radiologyai-testrepo",
@@ -8504,7 +9152,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-radiology-4",
@@ -8531,7 +9181,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "aifinitydigital-llama-3.2-11b-vision-instruct-radiology-5",
@@ -8558,7 +9210,9 @@
     "language": [
       "English",
       "Multilingual"
-    ]
+    ],
+    "weights_format": "GGUF",
+    "remote_code": false
   },
   {
     "id": "ujwal-jibhkate-auditable-radiology-ai-model",
@@ -8582,7 +9236,9 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   },
   {
     "id": "bhumika-tewari-282006-ayurvedic-drug-discovery-affinity-model",
@@ -8606,6 +9262,8 @@
     "featured": false,
     "language": [
       "English"
-    ]
+    ],
+    "weights_format": "unknown",
+    "remote_code": false
   }
 ]

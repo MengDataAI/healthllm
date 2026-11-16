@@ -9,6 +9,8 @@ export interface HealthModel {
   license_type: "open-source" | "open-weights";
   hf: string;
   ollama: string | null;
+  weights_format?: string;
+  remote_code?: boolean;
   specialty: string[];
   usecase: string;
   strength: string;
@@ -24,7 +26,8 @@ export interface HealthDataset {
   type: string;
   size: string;
   task: string;
-  access: "open" | "credentialed";
+  access: "open" | "credentialed" | "gated";
+  status?: "checked" | "auto";
   license: string;
   hf: string;
   specialty: string[];

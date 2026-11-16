@@ -76,6 +76,11 @@ create policy "Public read eval_results" on public.eval_results for select using
 alter table public.health_models add column if not exists language text[] default '{}';
 alter table public.health_datasets add column if not exists language text[] default '{}';
 
+-- Dataset review status and model metadata (run if adding to existing tables)
+alter table public.health_datasets add column if not exists status text default 'auto';
+alter table public.health_models add column if not exists weights_format text;
+alter table public.health_models add column if not exists remote_code boolean default false;
+
 -- Subscribers
 create table if not exists public.subscribers (
   id uuid default gen_random_uuid() primary key,
